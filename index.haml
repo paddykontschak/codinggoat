@@ -1,0 +1,62 @@
+!!! 5
+%html
+  %head
+    %title codinggoat
+    %meta{:author => "Patrick Kontschak"}
+    %style{:type => "text/css", :media => "all"} @import "css/style.css";
+    %style{:type => "text/css", :media => "all"} @import "css/prettify.css";
+    /[if lt IE 9]
+      %script{:src => "http://html5shim.googlecode.com/svn/trunk/html5.js"}
+    %script{:src => "scripts/prettify.js"}
+    %script{:src => "scripts/lang-css.js"}
+    %link{:rel => "icon", :href => "images/favicon.png"}
+  %body{:onload => "prettyPrint()"}
+    .container-fluid
+      .row-fluid
+        .span12
+          %pre.prettyprint.linenums.languague-css
+            :preserve
+              // hi, i develop websites
+              #codinggoat {
+                name: Patrick Kontschak;
+                age: 23;
+                nationality: german;
+                localization: toronto(on, canada);
+                languages: german, english;
+                profession: web-developer;
+                bio: geek, mac-user, irc-junkie, beard-crawler;
+              }
+
+              .skills {
+                development: programming, markup, standards, validation, wordpress, subversion, oh-my-zsh, cross-browser-compatibility, frameworks, libraries, bootstrap, LESS;
+                code: html(4, 5), css(2.1, 3), jquery, coffeescript, cakephp, svn, git, less, sass, objective-c;
+                software: SublimeText2, photoshop, chrome, mac, linux;
+              }
+
+              .education {
+                learning: autodidactic, enthusiastic;
+                school: Wilhelm Wagenfeld Schule, bremen(germany, from(2006), to(2009));
+                degree: abitur; // comparable to the International Baccalaureate
+              }
+
+              .work
+                employer-history:
+                ideacouture, toronto(canada, from(2011), to(2012));
+                atomic55, kelowna(canada, 2011);
+                css3: finder, notepaper;
+                -itsy-themes: itsyrific, twitter, modern, nawong;
+                -skype-chat-style: bubble-gum;
+                -plugins: prefixr-coda;
+
+              .social
+                blogging: twitter, tumblr;
+                artsie: deviantart;
+                communities: google+, facebook, github, forrst, linkedin, xing;
+
+              .contact
+                mailto: patrick@kontschak.com;
+
+              (_(
+              /_/'_____/)
+              "  |      |
+                 |""""""| this ascii goat ate my copyright...
