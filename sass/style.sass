@@ -1,4 +1,20 @@
-@import "bootstrap"
+/**
+ * Hi, this website was created by Patrick Kontschak.
+ *
+ * Thanks goes to:
+ * Twitter Bootstrap: http://twitter.github.com/bootstrap/
+ * Bootstrap for Sass: https://github.com/thomas-mcdonald/bootstrap-sass/
+ * Prism.js: http://prismjs.com/
+ *
+ */
+@import "bootstrap/variables"
+@import "bootstrap/mixins"
+@import "bootstrap/code"
+@import "bootstrap/type"
+@import "bootstrap/reset"
+@import "bootstrap/scaffolding"
+@import "bootstrap/grid"
+@import "bootstrap/utilities"
 
 html
   display: table
@@ -10,6 +26,8 @@ body
   display: table-cell
   vertical-align: middle
 
-pre
-  &.prettyprint
-    margin-top: 18px
+pre[class*="language-"]
+  margin: 0
+
+.line-highlight::before, .line-highlight[data-end]::after
+  padding: 0 .7em
