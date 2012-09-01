@@ -2,15 +2,15 @@
 (function() {
 
   $(document).ready(function() {
-    $("#textfield").load("info.html");
+    $("#scroller").load("info.html");
     0;
 
     $("#index").on("click", function(event) {
-      $("#textfield").load("info.html");
+      $("#scroller").load("info.html");
       return 0;
     });
     return $("#contact").on("click", function(event) {
-      $("#textfield").load("contact.html");
+      $("#scroller").load("contact.html");
       return 0;
     });
   });
