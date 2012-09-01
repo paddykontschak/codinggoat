@@ -15,6 +15,7 @@
 @import "bootstrap/scaffolding"
 @import "bootstrap/grid"
 @import "bootstrap/utilities"
+@import "compass"
 
 html
   display: table
@@ -23,11 +24,89 @@ html
 
 body
   margin: 0px
+  padding: 50px
   display: table-cell
   vertical-align: middle
+  font-family: "Lucida Grande"
+  font-size: 12px
+  +background(linear-gradient(top left, #33799d, #e8ebb4))
 
 pre[class*="language-"]
   margin: 0
 
 .line-highlight::before, .line-highlight[data-end]::after
   padding: 0 .7em
+
+ul
+  margin: 0
+  padding: 0
+  li
+    margin: 2px
+
+#app
+  display: block
+  width: 882px
+  height: 684px
+  margin: 0 auto
+  background-color: #ededed
+  +box-shadow(rgba(#000, .1) 1px 1px, rgba(#000, .1) -1px -1px, rgba(#000, .1) 1px -1px, rgba(#000, .1) -1px 1px, rgba(#000, .8) 0 0 70px)
+  +border-radius(5px)
+
+#toolbar
+  height: 21px
+  display: block
+  border-bottom: solid 1px #686868
+  +background(linear-gradient(#e4e4e4, #b8b7b8))
+  +box-shadow(#f1f1f1 0 1px inset)
+  +border-radius(6px 6px 0 0)
+
+#traffic-light
+  display: inline
+  margin-left: 4px
+  float: left
+  .aqua
+    width: 12px
+    height: 12px
+    display: block
+    margin: 5px 4px 4px 4px
+    background: #000
+    float: left
+    +background-image(radial-gradient(6px 18px, rgba(#fff, .7) 2px, rgba(#fff, 0) 5px), radial-gradient(6px -1px, #fff 1px, rgba(#fff, 0) 3px))
+    +box-shadow(rgba(#000, .9) 0 1px 4px inset, rgba(#fff, .5) 0 1px)
+    +border-radius(100px)
+    &#red
+      background-color: #f24443
+    &#yellow
+      background-color: #f0aa5a
+    &#green
+      background-color: #88be72
+
+#view
+  width: 882px
+  height: 640px
+  *
+    +float-left
+
+#tree
+  width: 80px
+  height: 320px
+  padding: 10px
+  color: #455563
+  background-color: #e6eaef
+  +box-shadow(#bdbdbd -1px 0 inset)
+
+#textfield
+  width: 762px
+  height: 640px
+  padding: 0 10px
+  color: #a7a7a7
+  background-color: #222222
+
+#statusbar
+  height: 21px
+  display: block
+  border-top: solid 1px #686868
+  +background(linear-gradient(#e4e4e4, #b8b7b8))
+  +box-shadow(#f1f1f1 0 1px inset)
+  +border-radius(0 0 4px 4px)
+  +clearfix
