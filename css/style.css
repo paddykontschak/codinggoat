@@ -223,27 +223,50 @@ ol:first-child {
   color: #cd264c;
 }
 
-/* line 135, ../sass/style.sass */
+/* line 136, ../sass/style.sass */
+.css:after {
+  content: "}";
+}
+
+/* line 139, ../sass/style.sass */
 .class {
   color: #cd264c;
 }
+/* line 141, ../sass/style.sass */
+.class:after {
+  content: " {";
+  white-space-collapsing: discard;
+}
 
-/* line 138, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
+/* line 147, ../sass/style.sass */
+.property:after {
+  content: ":";
+  margin: 0;
+  padding: 0;
+  white-space-collapsing: discard;
+}
 
-/* line 141, ../sass/style.sass */
+/* line 153, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
 
-/* line 144, ../sass/style.sass */
+/* line 156, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
 
-/* line 148, ../sass/style.sass */
+/* line 160, ../sass/style.sass */
 .value:before, .reference:before {
   content: "\0000a0";
+}
+
+/* line 164, ../sass/style.sass */
+.end:after {
+  content: ";";
+  white-space-collapsing: discard;
 }

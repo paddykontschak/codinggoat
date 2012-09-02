@@ -132,11 +132,23 @@ ol
 .haml
   color: #cd264c
 
+.css
+  &:after
+    content: "}"
+
 .class
   color: #cd264c
+  &:after
+    content: " {"
+    white-space-collapsing: discard
 
 .property
   color: #ca9d36
+  &:after
+    content: ":"
+    margin: 0
+    padding: 0
+    white-space-collapsing: discard
 
 .value
   color: #f6853c
@@ -147,3 +159,8 @@ ol
 .value, .reference
   &:before
     content: "\0000a0"
+
+.end
+  &:after
+    content: ";"
+    white-space-collapsing: discard
