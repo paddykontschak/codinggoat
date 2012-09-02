@@ -29,7 +29,7 @@
       $("#scroller").load("copyleft.html");
       return 0;
     });
-    return $.getScript("http://yandex.st/highlightjs/7.2/highlight.min.js", function(data, textStatus, jqxhr) {
+    return $.getScript("scripts/prism.js", function(data, textStatus, jqxhr) {
       console.log(data);
       console.log(textStatus);
       console.log(jqxhr.status);
