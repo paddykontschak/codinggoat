@@ -141,7 +141,7 @@ ol:first-child {
   height: 640px;
 }
 /* line 85, ../sass/style.sass */
-#view * {
+#view div {
   display: inline;
   float: left;
 }
