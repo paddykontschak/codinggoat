@@ -132,6 +132,10 @@ ol
 .haml
   color: #cd264c
 
+.css
+  &:after
+    content: "}"
+
 .class
   color: #cd264c
   &:after
@@ -141,19 +145,22 @@ ol
   color: #ca9d36
   &:after
     content: ":"
+    margin: 0
+    padding: 0
 
 .value
   color: #f6853c
-  &:after
-    content: ","
 
 .reference
   color: #4173a9
-  &:after
-    content: ","
 
 .value, .reference
-  padding-left: 10px
+  &:before
+    content: "  "
+  &:after
+    content: ","
+    margin: 0
+    padding: 0
 
 .end
   &:after

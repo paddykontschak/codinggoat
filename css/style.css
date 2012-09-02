@@ -223,48 +223,53 @@ ol:first-child {
   color: #cd264c;
 }
 
-/* line 135, ../sass/style.sass */
+/* line 136, ../sass/style.sass */
+.css:after {
+  content: "}";
+}
+
+/* line 139, ../sass/style.sass */
 .class {
   color: #cd264c;
 }
-/* line 137, ../sass/style.sass */
+/* line 141, ../sass/style.sass */
 .class:after {
   content: " {";
 }
 
-/* line 140, ../sass/style.sass */
+/* line 144, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
-/* line 142, ../sass/style.sass */
+/* line 146, ../sass/style.sass */
 .property:after {
   content: ":";
+  margin: 0;
+  padding: 0;
 }
 
-/* line 145, ../sass/style.sass */
+/* line 151, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
-/* line 147, ../sass/style.sass */
-.value:after {
-  content: ",";
-}
 
-/* line 150, ../sass/style.sass */
+/* line 154, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
-/* line 152, ../sass/style.sass */
-.reference:after {
+
+/* line 158, ../sass/style.sass */
+.value:before, .reference:before {
+  content: "  ";
+}
+/* line 160, ../sass/style.sass */
+.value:after, .reference:after {
   content: ",";
+  margin: 0;
+  padding: 0;
 }
 
-/* line 155, ../sass/style.sass */
-.value, .reference {
-  padding-left: 10px;
-}
-
-/* line 159, ../sass/style.sass */
+/* line 166, ../sass/style.sass */
 .end:after {
   content: ";";
 }
