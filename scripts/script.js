@@ -11,6 +11,13 @@
     });
     $("#skills").on("click", function(event) {
       $("#scroller").load("skills.html");
+      $.getScript("scripts/prism.js", function(data, textStatus, jqxhr) {
+        console.log(data);
+        console.log(textStatus);
+        console.log(jqxhr.status);
+        console.log("Load was performed.");
+        return 0;
+      });
       return 0;
     });
     $("#education").on("click", function(event) {

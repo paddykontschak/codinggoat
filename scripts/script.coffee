@@ -8,6 +8,12 @@ $(document).ready ->
 
   $("#skills").on "click", (event) ->
     $("#scroller").load "skills.html"
+    $.getScript "scripts/prism.js", (data, textStatus, jqxhr) ->
+      console.log data #data returned
+      console.log textStatus #success
+      console.log jqxhr.status #200
+      console.log "Load was performed."
+      0
     0
 
   $("#education").on "click", (event) ->
