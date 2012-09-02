@@ -1,13 +1,19 @@
-%pre
-  %code.language-html
-    :preserve
-      / HAML
-      %h1 The Coding Goat
+!!! 5
+%html
+  %head
+    %style{:type => "text/css", :media => "all"} @import "css/prism.css";
+    %script{:src => "scripts/prism.js"}
+  %body
+    %pre
+      %code.language-html
+        :preserve
+          / HAML
+          %h1 The Coding Goat
 
-      %h2 About Me
-      %p Hi, my name is Patrick Kontschak, I'm 23 years old and I'm a developer.
-      %p I currently live in Toronto, ON, Canada, my natiionality is German and I'm fluent in both English and German.
-      %p I'm a Mac and Linux user, a headbanger and beard-crawler (my own beard, of course).
+          %h2 About Me
+          %p Hi, my name is Patrick Kontschak, I'm 23 years old and I'm a developer.
+          %p I currently live in Toronto, ON, Canada, my natiionality is German and I'm fluent in both English and German.
+          %p I'm a Mac and Linux user, a headbanger and beard-crawler (my own beard, of course).
 
-      %h2 About the goat
-      %p The Coding Goat is 
+          %h2 About the goat
+          %p The Coding Goat is 

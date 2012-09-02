@@ -25,15 +25,8 @@
       $("#scroller").load("contact.html");
       return 0;
     });
-    $("#copyleft").on("click", function(event) {
+    return $("#copyleft").on("click", function(event) {
       $("#scroller").load("copyleft.html");
-      return 0;
-    });
-    return $.getScript("scripts/prism.js", function(data, textStatus, jqxhr) {
-      console.log(data);
-      console.log(textStatus);
-      console.log(jqxhr.status);
-      console.log("Load was performed.");
       return 0;
     });
   });

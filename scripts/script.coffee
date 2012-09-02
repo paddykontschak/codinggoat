@@ -25,10 +25,3 @@ $(document).ready ->
   $("#copyleft").on "click", (event) ->
     $("#scroller").load "copyleft.html"
     0
-
-  $.getScript "scripts/prism.js", (data, textStatus, jqxhr) ->
-    console.log data #data returned
-    console.log textStatus #success
-    console.log jqxhr.status #200
-    console.log "Load was performed."
-    0
