@@ -132,21 +132,11 @@ ol
 .haml
   color: #cd264c
 
-.css
-  &:after
-    content: "}"
-
 .class
   color: #cd264c
-  &:after
-    content: " {"
 
 .property
   color: #ca9d36
-  &:after
-    content: ":"
-    margin: 0
-    padding: 0
 
 .value
   color: #f6853c
@@ -156,12 +146,4 @@ ol
 
 .value, .reference
   &:before
-    content: "  "
-  &:after
-    content: ","
-    margin: 0
-    padding: 0
-
-.end
-  &:after
-    content: ";"
+    content: "\0000a0"
