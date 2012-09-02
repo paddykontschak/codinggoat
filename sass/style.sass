@@ -43,6 +43,21 @@ ul
   li
     margin: 2px
 
+ol
+  margin: 0
+  padding: 0
+  list-style-type: none
+  & > li
+    counter-increment: customlistcounter
+    &:before
+      content: counter(customlistcounter) " "
+      font-weight: bold
+      float: left
+      width: 3em
+
+  &:first-child
+    counter-reset: customlistcounter
+
 #app
   display: block
   width: 882px
@@ -122,3 +137,9 @@ ul
   +rotate(180deg)
   &::after
     content: "\00A9"
+
+/* Syntax highlighting */
+
+.haml
+  color: #cd264c
+  font-weight: bold
