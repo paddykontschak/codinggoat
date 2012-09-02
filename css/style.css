@@ -43,21 +43,22 @@ ol {
 ol > li {
   display: block;
   width: 100%;
+  color: #4d4d4d;
   counter-increment: customlistcounter;
 }
-/* line 35, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 ol > li:before {
   content: counter(customlistcounter) " ";
-  font-weight: bold;
+  color: #a6a6a5;
   float: left;
   width: 2em;
 }
-/* line 41, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 ol:first-child {
   counter-reset: customlistcounter;
 }
 
-/* line 44, ../sass/style.sass */
+/* line 45, ../sass/style.sass */
 #app {
   display: block;
   width: 882px;
@@ -74,7 +75,7 @@ ol:first-child {
   border-radius: 5px;
 }
 
-/* line 53, ../sass/style.sass */
+/* line 54, ../sass/style.sass */
 #toolbar {
   height: 21px;
   display: block;
@@ -94,13 +95,13 @@ ol:first-child {
   border-radius: 6px 6px 0 0;
 }
 
-/* line 61, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 #traffic-light {
   display: inline;
   margin-left: 4px;
   float: left;
 }
-/* line 65, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 #traffic-light .aqua {
   width: 12px;
   height: 12px;
@@ -122,31 +123,31 @@ ol:first-child {
   -o-border-radius: 100px;
   border-radius: 100px;
 }
-/* line 75, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 #traffic-light .aqua#red {
   background-color: #f24443;
 }
-/* line 77, ../sass/style.sass */
+/* line 78, ../sass/style.sass */
 #traffic-light .aqua#yellow {
   background-color: #f0aa5a;
 }
-/* line 79, ../sass/style.sass */
+/* line 80, ../sass/style.sass */
 #traffic-light .aqua#green {
   background-color: #88be72;
 }
 
-/* line 82, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 #view {
   width: 882px;
   height: 640px;
 }
-/* line 85, ../sass/style.sass */
+/* line 86, ../sass/style.sass */
 #view div {
   display: inline;
   float: left;
 }
 
-/* line 88, ../sass/style.sass */
+/* line 89, ../sass/style.sass */
 #tree {
   width: 80px;
   height: 620px;
@@ -158,7 +159,7 @@ ol:first-child {
   box-shadow: #bdbdbd -1px 0 inset;
 }
 
-/* line 96, ../sass/style.sass */
+/* line 97, ../sass/style.sass */
 #textfield {
   width: 762px;
   height: 640px;
@@ -168,12 +169,12 @@ ol:first-child {
   overflow: scroll;
 }
 
-/* line 104, ../sass/style.sass */
+/* line 105, ../sass/style.sass */
 #scroller {
   width: 762px;
 }
 
-/* line 107, ../sass/style.sass */
+/* line 108, ../sass/style.sass */
 #statusbar {
   height: 21px;
   display: block;
@@ -195,7 +196,7 @@ ol:first-child {
   *zoom: 1;
 }
 
-/* line 116, ../sass/style.sass */
+/* line 117, ../sass/style.sass */
 #copyleft {
   width: 16px;
   height: 16px;
@@ -206,13 +207,13 @@ ol:first-child {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 121, ../sass/style.sass */
+/* line 122, ../sass/style.sass */
 #copyleft::after {
   content: "\00A9";
 }
 
 /* Syntax highlighting */
-/* line 126, ../sass/style.sass */
+/* line 127, ../sass/style.sass */
 .haml {
   color: #cd264c;
   font-weight: bold;
