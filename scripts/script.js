@@ -9,8 +9,24 @@
       $("#scroller").load("info.html");
       return 0;
     });
-    return $("#contact").on("click", function(event) {
+    $("#skills").on("click", function(event) {
+      $("#scroller").load("skills.html");
+      return 0;
+    });
+    $("#education").on("click", function(event) {
+      $("#scroller").load("education.html");
+      return 0;
+    });
+    $("#work").on("click", function(event) {
+      $("#scroller").load("work.html");
+      return 0;
+    });
+    $("#contact").on("click", function(event) {
       $("#scroller").load("contact.html");
+      return 0;
+    });
+    return $("#copyleft").on("click", function(event) {
+      $("#scroller").load("copyleft.html");
       return 0;
     });
   });

@@ -89,7 +89,7 @@ ul
 
 #tree
   width: 80px
-  height: 320px
+  height: 620px
   padding: 10px
   color: #455563
   background-color: #e6eaef
@@ -100,7 +100,7 @@ ul
   height: 640px
   padding: 0 10px
   color: #a7a7a7
-  // background-color: #222222
+  background-color: #fff
   overflow: scroll
 
 #scroller
@@ -114,3 +114,11 @@ ul
   +box-shadow(#f1f1f1 0 1px inset)
   +border-radius(0 0 4px 4px)
   +clearfix
+
+#copyleft
+  width: 16px
+  height: 16px
+  display: block
+  +rotate(180deg)
+  &::after
+    content: "\00A9"
