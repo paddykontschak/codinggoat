@@ -896,11 +896,15 @@ ul li {
   height: 640px;
   padding: 0 10px;
   color: #a7a7a7;
-  background-color: #222222;
   overflow: scroll;
 }
 
-/* line 108, ../sass/style.sass */
+/* line 106, ../sass/style.sass */
+#scroller {
+  width: 762px;
+}
+
+/* line 109, ../sass/style.sass */
 #statusbar {
   height: 21px;
   display: block;
