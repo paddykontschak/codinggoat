@@ -18,12 +18,6 @@ body
   font-size: 12px
   +background(linear-gradient(top left, #33799d, #e8ebb4))
 
-pre[class*="language-"]
-  margin: 0
-
-.line-highlight::before, .line-highlight[data-end]::after
-  padding: 0 .7em
-
 ul
   margin: 0
   padding: 0
@@ -35,12 +29,14 @@ ol
   padding: 0
   list-style-type: none
   & > li
+    display: block
+    width: 100%
     counter-increment: customlistcounter
     &:before
       content: counter(customlistcounter) " "
       font-weight: bold
       float: left
-      width: 3em
+      width: 2em
 
   &:first-child
     counter-reset: customlistcounter
