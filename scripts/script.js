@@ -25,8 +25,15 @@
       $("#scroller").load("contact.html");
       return 0;
     });
-    return $("#copyleft").on("click", function(event) {
+    $("#copyleft").on("click", function(event) {
       $("#scroller").load("copyleft.html");
+      return 0;
+    });
+    return $.getScript("http://yandex.st/highlightjs/7.2/highlight.min.js", function(data, textStatus, jqxhr) {
+      console.log(data);
+      console.log(textStatus);
+      console.log(jqxhr.status);
+      console.log("Load was performed.");
       return 0;
     });
   });
