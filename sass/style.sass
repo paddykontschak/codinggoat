@@ -35,9 +35,12 @@ ol
     counter-increment: customlistcounter
     &:before
       content: counter(customlistcounter) " "
+      width: 29px
+      padding: auto 10px
       color: #a6a6a5
+      text-align: right
+      border-right: 1px dotted #e4e4e4
       float: left
-      width: 2em
 
   &:first-child
     counter-reset: customlistcounter
