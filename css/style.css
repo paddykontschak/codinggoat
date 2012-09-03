@@ -313,3 +313,8 @@ ol.copy > li:before {
 .headline {
   color: #7d954e;
 }
+
+/* line 208, ../sass/style.sass */
+.highlighted {
+  background: #eee8d7;
+}
