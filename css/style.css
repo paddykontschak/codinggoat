@@ -49,20 +49,19 @@ ol {
 ol > li {
   display: block;
   width: 100%;
-  padding: 0 10px;
   color: #4d4d4d;
   counter-increment: customlistcounter;
 }
-/* line 41, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 ol > li a {
   color: #3d5800;
   text-decoration: none;
 }
-/* line 44, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 ol > li a:active, ol > li a:hover {
   color: #708b2c;
 }
-/* line 47, ../sass/style.sass */
+/* line 46, ../sass/style.sass */
 ol > li:before {
   content: counter(customlistcounter) " ";
   width: 19px;
@@ -72,54 +71,54 @@ ol > li:before {
   border-right: 1px dotted #e4e4e4;
   float: left;
 }
-/* line 55, ../sass/style.sass */
+/* line 54, ../sass/style.sass */
 ol:first-child {
   counter-reset: customlistcounter;
 }
-/* line 59, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 ol.copy > li:before {
   color: #6f706f;
   border-right: 1px dotted #323332;
 }
 
-/* line 63, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 #editor {
   float: left;
 }
-/* line 65, ../sass/style.sass */
+/* line 64, ../sass/style.sass */
 #editor.NSWindow {
   width: 950px;
   height: 684px;
 }
-/* line 68, ../sass/style.sass */
+/* line 67, ../sass/style.sass */
 #editor.NSWindow .NSView {
   padding: 0;
   height: 640px;
 }
-/* line 71, ../sass/style.sass */
+/* line 70, ../sass/style.sass */
 #editor.NSWindow .NSView > div {
   float: left;
 }
 
-/* line 74, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 #info {
   float: right;
 }
-/* line 76, ../sass/style.sass */
+/* line 75, ../sass/style.sass */
 #info.NSWindow {
   width: 200px;
   height: 245px;
 }
-/* line 79, ../sass/style.sass */
+/* line 78, ../sass/style.sass */
 #info.NSWindow .NSView {
   padding-top: 5px;
 }
-/* line 81, ../sass/style.sass */
+/* line 80, ../sass/style.sass */
 #info.NSWindow .NSView p:first-child {
   font-weight: bold;
 }
 
-/* line 84, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 #tree {
   width: 120px;
   height: 620px;
@@ -131,7 +130,7 @@ ol.copy > li:before {
   box-shadow: #bdbdbd -1px 0 inset;
 }
 
-/* line 92, ../sass/style.sass */
+/* line 91, ../sass/style.sass */
 .current_page {
   color: #f3ffff;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
@@ -145,7 +144,7 @@ ol.copy > li:before {
   box-shadow: #5aa5da 0 1px inset, #6fbae5 0 2px inset, #307cbc 0 -1px inset;
 }
 
-/* line 98, ../sass/style.sass */
+/* line 97, ../sass/style.sass */
 #textfield {
   width: 830px;
   height: 640px;
@@ -156,12 +155,12 @@ ol.copy > li:before {
   text-shadow: 0 0 0;
 }
 
-/* line 107, ../sass/style.sass */
+/* line 106, ../sass/style.sass */
 #scroller {
   white-space: nowrap;
 }
 
-/* line 110, ../sass/style.sass */
+/* line 109, ../sass/style.sass */
 #statusbar {
   height: 21px;
   display: block;
@@ -183,7 +182,7 @@ ol.copy > li:before {
   *zoom: 1;
 }
 
-/* line 119, ../sass/style.sass */
+/* line 118, ../sass/style.sass */
 #copyleft {
   width: 16px;
   height: 16px;
@@ -196,17 +195,21 @@ ol.copy > li:before {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 126, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 #copyleft::after {
   content: "\2699";
 }
 
 /* Syntax highlighting */
-/* line 131, ../sass/style.sass */
+/* line 130, ../sass/style.sass */
 .haml, .link {
   color: #cd264c;
 }
 
+/* line 133, ../sass/style.sass */
+.coffee {
+  width: 1070px;
+}
 /* line 136, ../sass/style.sass */
 .coffee .string:before {
   content: "\0000a0 \0000a0";
