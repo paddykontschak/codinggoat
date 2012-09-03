@@ -16,6 +16,11 @@ body
   font-family: "Lucida Grande"
   font-size: 12px
 
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
 ul
   margin: 0
   padding: 0
@@ -39,7 +44,6 @@ ol
     counter-increment: customlistcounter
     a
       color: #708b2c - #333333
-      text-decoration: none
       &:active,
       &:hover
         color: #708b2c
@@ -138,6 +142,9 @@ ol
     .string
       &:before
         content: ""
+
+.ruby
+  width: 850px
 
 .copy
   background: #191919
