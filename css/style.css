@@ -203,118 +203,122 @@ ol.copy > li:before {
   width: 810px;
   height: 540px;
 }
+/* line 137, ../sass/style.sass */
+.copy .highlighted {
+  background: #202122;
+}
 
-/* line 139, ../sass/style.sass */
+/* line 141, ../sass/style.sass */
 .indent:before {
   content: "\0000a0 \0000a0";
 }
 
-/* line 142, ../sass/style.sass */
+/* line 144, ../sass/style.sass */
 .class {
   color: #cd264c;
 }
-/* line 144, ../sass/style.sass */
+/* line 146, ../sass/style.sass */
 .class:after {
   content: " {";
   color: #4d4d4d;
 }
 
-/* line 148, ../sass/style.sass */
+/* line 150, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
-/* line 150, ../sass/style.sass */
+/* line 152, ../sass/style.sass */
 .property:before {
   content: "\0000a0 \0000a0";
 }
-/* line 152, ../sass/style.sass */
+/* line 154, ../sass/style.sass */
 .property:after {
   content: ":";
   color: #4d4d4d;
 }
 
-/* line 156, ../sass/style.sass */
+/* line 158, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
-/* line 158, ../sass/style.sass */
+/* line 160, ../sass/style.sass */
 .value:after {
   content: ",";
   color: #4d4d4d;
 }
 
-/* line 162, ../sass/style.sass */
+/* line 164, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
 
-/* line 166, ../sass/style.sass */
+/* line 168, ../sass/style.sass */
 .value:before, .reference:before {
   content: "\0000a0 \0000a0 \0000a0 \0000a0";
 }
 
-/* line 169, ../sass/style.sass */
+/* line 171, ../sass/style.sass */
 .string {
   color: #708b2c;
 }
 
-/* line 172, ../sass/style.sass */
+/* line 174, ../sass/style.sass */
 .integer {
   color: #89beac;
 }
 
-/* line 176, ../sass/style.sass */
+/* line 178, ../sass/style.sass */
 .empty:after {
   content: "";
 }
 
-/* line 180, ../sass/style.sass */
+/* line 182, ../sass/style.sass */
 .end:after {
   content: ";";
   color: #4d4d4d;
 }
 
-/* line 184, ../sass/style.sass */
+/* line 186, ../sass/style.sass */
 .function {
   color: #4173b1;
 }
 
-/* line 187, ../sass/style.sass */
+/* line 189, ../sass/style.sass */
 .define {
   color: #55a1a5;
 }
 
-/* line 190, ../sass/style.sass */
+/* line 192, ../sass/style.sass */
 .parameters, .interpol, .date {
   color: #f6853c;
 }
 
-/* line 193, ../sass/style.sass */
+/* line 195, ../sass/style.sass */
 .rocket {
   color: #8a5ba2;
 }
 
-/* line 196, ../sass/style.sass */
+/* line 198, ../sass/style.sass */
 .comment {
   color: #8e908c;
 }
 
-/* line 199, ../sass/style.sass */
+/* line 201, ../sass/style.sass */
 .block {
   color: #8a5ba2;
 }
 
-/* line 202, ../sass/style.sass */
+/* line 204, ../sass/style.sass */
 .method {
   color: #4173a9;
 }
 
-/* line 205, ../sass/style.sass */
+/* line 207, ../sass/style.sass */
 .headline {
   color: #7d954e;
 }
 
-/* line 208, ../sass/style.sass */
+/* line 210, ../sass/style.sass */
 .highlighted {
   background: #eee8d7;
 }
