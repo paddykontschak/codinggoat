@@ -22,28 +22,24 @@ body {
 a {
   text-decoration: none;
 }
-/* line 22, ../sass/style.sass */
-a:hover {
-  text-decoration: underline;
-}
 
-/* line 25, ../sass/style.sass */
+/* line 23, ../sass/style.sass */
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 29, ../sass/style.sass */
+/* line 27, ../sass/style.sass */
 ul li {
   margin-right: 1px;
 }
-/* line 31, ../sass/style.sass */
+/* line 29, ../sass/style.sass */
 ul li a {
   display: block;
   padding: 2px 12px 2px 11px;
 }
 
-/* line 35, ../sass/style.sass */
+/* line 33, ../sass/style.sass */
 ol {
   margin: 0;
   padding: 0 0 100px;
@@ -51,22 +47,22 @@ ol {
   font-size: 14px;
   font-family: "Inconsolata", monospace;
 }
-/* line 41, ../sass/style.sass */
+/* line 39, ../sass/style.sass */
 ol > li {
   display: block;
   width: 100%;
   color: #4d4d4d;
   counter-increment: customlistcounter;
 }
-/* line 46, ../sass/style.sass */
+/* line 44, ../sass/style.sass */
 ol > li a {
   color: #3d5800;
 }
-/* line 48, ../sass/style.sass */
+/* line 46, ../sass/style.sass */
 ol > li a:active, ol > li a:hover {
   color: #708b2c;
 }
-/* line 51, ../sass/style.sass */
+/* line 49, ../sass/style.sass */
 ol > li:before {
   content: counter(customlistcounter) " ";
   width: 19px;
@@ -76,54 +72,54 @@ ol > li:before {
   border-right: 1px dotted #e4e4e4;
   float: left;
 }
-/* line 59, ../sass/style.sass */
+/* line 57, ../sass/style.sass */
 ol:first-child {
   counter-reset: customlistcounter;
 }
-/* line 63, ../sass/style.sass */
+/* line 61, ../sass/style.sass */
 ol.copy > li:before {
   color: #6f706f;
   border-right: 1px dotted #323332;
 }
 
-/* line 67, ../sass/style.sass */
+/* line 65, ../sass/style.sass */
 #editor {
   float: left;
 }
-/* line 69, ../sass/style.sass */
+/* line 67, ../sass/style.sass */
 #editor.NSWindow {
   width: 950px;
   height: 684px;
 }
-/* line 72, ../sass/style.sass */
+/* line 70, ../sass/style.sass */
 #editor.NSWindow .NSView {
   padding: 0;
   height: 640px;
 }
-/* line 75, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 #editor.NSWindow .NSView > div {
   float: left;
 }
 
-/* line 78, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 #info {
   float: right;
 }
-/* line 80, ../sass/style.sass */
+/* line 78, ../sass/style.sass */
 #info.NSWindow {
   width: 200px;
   height: 245px;
 }
-/* line 83, ../sass/style.sass */
+/* line 81, ../sass/style.sass */
 #info.NSWindow .NSView {
   padding-top: 5px;
 }
-/* line 85, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 #info.NSWindow .NSView p:first-child {
   font-weight: bold;
 }
 
-/* line 88, ../sass/style.sass */
+/* line 86, ../sass/style.sass */
 #tree {
   width: 120px;
   height: 620px;
@@ -135,7 +131,7 @@ ol.copy > li:before {
   box-shadow: #bdbdbd -1px 0 inset;
 }
 
-/* line 96, ../sass/style.sass */
+/* line 94, ../sass/style.sass */
 .current_page {
   color: #f3ffff;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
@@ -149,7 +145,7 @@ ol.copy > li:before {
   box-shadow: #5aa5da 0 1px inset, #6fbae5 0 2px inset, #307cbc 0 -1px inset;
 }
 
-/* line 102, ../sass/style.sass */
+/* line 100, ../sass/style.sass */
 #textfield {
   width: 830px;
   height: 640px;
@@ -160,12 +156,12 @@ ol.copy > li:before {
   text-shadow: 0 0 0;
 }
 
-/* line 111, ../sass/style.sass */
+/* line 109, ../sass/style.sass */
 #scroller {
   white-space: nowrap;
 }
 
-/* line 114, ../sass/style.sass */
+/* line 112, ../sass/style.sass */
 #statusbar {
   height: 21px;
   display: block;
@@ -187,7 +183,7 @@ ol.copy > li:before {
   *zoom: 1;
 }
 
-/* line 123, ../sass/style.sass */
+/* line 121, ../sass/style.sass */
 #copyleft {
   width: 16px;
   height: 16px;
@@ -200,170 +196,170 @@ ol.copy > li:before {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 130, ../sass/style.sass */
+/* line 128, ../sass/style.sass */
 #copyleft::after {
   content: "\2699";
 }
 
 /* Syntax highlighting */
-/* line 135, ../sass/style.sass */
+/* line 133, ../sass/style.sass */
 .haml, .link {
   color: #cd264c;
 }
 
-/* line 138, ../sass/style.sass */
+/* line 136, ../sass/style.sass */
 .coffee {
   width: 1070px;
 }
-/* line 141, ../sass/style.sass */
+/* line 139, ../sass/style.sass */
 .coffee .string:before {
   content: "\0000a0 \0000a0";
 }
-/* line 144, ../sass/style.sass */
+/* line 142, ../sass/style.sass */
 .coffee .string .string:before {
   content: "";
 }
 
-/* line 147, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 .ruby {
   width: 850px;
 }
 
-/* line 150, ../sass/style.sass */
+/* line 148, ../sass/style.sass */
 .copy {
   background: #191919;
   width: 830px;
   height: 540px;
 }
-/* line 154, ../sass/style.sass */
+/* line 152, ../sass/style.sass */
 .copy li {
   color: #c3d1cf;
 }
-/* line 156, ../sass/style.sass */
+/* line 154, ../sass/style.sass */
 .copy .highlighted {
   background: #202122;
 }
-/* line 158, ../sass/style.sass */
+/* line 156, ../sass/style.sass */
 .copy a {
   color: #7f7c33;
   text-decoration: none;
 }
-/* line 161, ../sass/style.sass */
+/* line 159, ../sass/style.sass */
 .copy a:active, .copy a:hover {
   color: #b2af66;
 }
 
-/* line 166, ../sass/style.sass */
+/* line 164, ../sass/style.sass */
 .indent:before {
   content: "\0000a0 \0000a0";
 }
 
-/* line 169, ../sass/style.sass */
+/* line 167, ../sass/style.sass */
 .class {
   color: #cd264c;
 }
-/* line 171, ../sass/style.sass */
+/* line 169, ../sass/style.sass */
 .class:after {
   content: " {";
   color: #4d4d4d;
 }
 
-/* line 175, ../sass/style.sass */
+/* line 173, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
-/* line 177, ../sass/style.sass */
+/* line 175, ../sass/style.sass */
 .property:before {
   content: "\0000a0 \0000a0";
 }
-/* line 179, ../sass/style.sass */
+/* line 177, ../sass/style.sass */
 .property:after {
   content: ":";
   color: #4d4d4d;
 }
 
-/* line 183, ../sass/style.sass */
+/* line 181, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
-/* line 185, ../sass/style.sass */
+/* line 183, ../sass/style.sass */
 .value:after {
   content: ",";
   color: #4d4d4d;
 }
 
-/* line 189, ../sass/style.sass */
+/* line 187, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
 
-/* line 193, ../sass/style.sass */
+/* line 191, ../sass/style.sass */
 .value:before, .reference:before {
   content: "\0000a0 \0000a0 \0000a0 \0000a0";
 }
 
-/* line 196, ../sass/style.sass */
+/* line 194, ../sass/style.sass */
 .string {
   color: #708b2c;
 }
 
-/* line 199, ../sass/style.sass */
+/* line 197, ../sass/style.sass */
 .integer {
   color: #89beac;
 }
 
-/* line 203, ../sass/style.sass */
+/* line 201, ../sass/style.sass */
 .empty:after {
   content: "";
 }
 
-/* line 207, ../sass/style.sass */
+/* line 205, ../sass/style.sass */
 .end:after {
   content: ";";
   color: #4d4d4d;
 }
 
-/* line 211, ../sass/style.sass */
+/* line 209, ../sass/style.sass */
 .function {
   color: #4173b1;
 }
 
-/* line 214, ../sass/style.sass */
+/* line 212, ../sass/style.sass */
 .define {
   color: #55a1a5;
 }
 
-/* line 217, ../sass/style.sass */
+/* line 215, ../sass/style.sass */
 .parameters, .interpol, .date {
   color: #f6853c;
 }
 
-/* line 220, ../sass/style.sass */
+/* line 218, ../sass/style.sass */
 .rocket {
   color: #8a5ba2;
 }
 
-/* line 223, ../sass/style.sass */
+/* line 221, ../sass/style.sass */
 .comment {
   color: #8e908c;
 }
 
-/* line 226, ../sass/style.sass */
+/* line 224, ../sass/style.sass */
 .block {
   color: #8a5ba2;
 }
 
-/* line 229, ../sass/style.sass */
+/* line 227, ../sass/style.sass */
 .method {
   color: #4173a9;
 }
 
-/* line 232, ../sass/style.sass */
+/* line 230, ../sass/style.sass */
 .headline {
   color: #7d954e;
 }
 
-/* line 235, ../sass/style.sass */
+/* line 233, ../sass/style.sass */
 .highlighted {
   background: #eee8d7;
 }
