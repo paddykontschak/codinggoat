@@ -23,10 +23,22 @@
     %span.value.end svn
   %li
     %span.property code
-  %li
-    %span.value html(4, 5)
-  %li
-    %span.value css(2.1, 3)
+  %li<
+    %span.value>< html
+    \(
+    %span.value>< 4
+    \,
+    %span.value< 5
+    \)
+  %li<
+    %span.value>< css
+    \(
+    %span.value>< 2
+    \.
+    %span.value>< 1
+    \,
+    %span.value< 3
+    \)
   %li
     %span.value.end jquery
   %li
@@ -70,8 +82,7 @@
   %li
     %span.value vim
   %li<
-    %span.reference><
-      SublimeText
+    %span.reference>< SublimeText
     (
     %span.string><
       %a{:href => "http://www.sublimetext.com/"} "http://www.sublimetext.com/"
