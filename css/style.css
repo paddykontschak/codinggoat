@@ -265,103 +265,99 @@ ol.copy > li:before {
 .class:after {
   content: " {";
   color: #4d4d4d;
-  white-space-collapsing: discard;
 }
 
-/* line 168, ../sass/style.sass */
+/* line 167, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
-/* line 170, ../sass/style.sass */
+/* line 169, ../sass/style.sass */
 .property:before {
   content: "\0000a0";
 }
-/* line 172, ../sass/style.sass */
+/* line 171, ../sass/style.sass */
 .property:after {
   content: ":";
   color: #4d4d4d;
-  white-space-collapsing: discard;
 }
 
-/* line 177, ../sass/style.sass */
+/* line 175, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
-/* line 179, ../sass/style.sass */
+/* line 177, ../sass/style.sass */
 .value:after {
   content: ",";
   color: #4d4d4d;
-  white-space-collapsing: discard;
 }
 
-/* line 184, ../sass/style.sass */
+/* line 181, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
 
-/* line 188, ../sass/style.sass */
+/* line 185, ../sass/style.sass */
 .value:before, .reference:before {
   content: "\0000a0 \0000a0";
 }
 
-/* line 191, ../sass/style.sass */
+/* line 188, ../sass/style.sass */
 .string {
   color: #708b2c;
 }
 
-/* line 194, ../sass/style.sass */
+/* line 191, ../sass/style.sass */
 .integer {
   color: #89beac;
 }
 
-/* line 198, ../sass/style.sass */
+/* line 195, ../sass/style.sass */
 .empty:after {
   content: "";
 }
 
-/* line 202, ../sass/style.sass */
+/* line 199, ../sass/style.sass */
 .end:after {
   content: ";";
   color: #4d4d4d;
-  white-space-collapsing: discard;
 }
 
-/* line 207, ../sass/style.sass */
+/* line 203, ../sass/style.sass */
 .function {
   color: #4173b1;
 }
 
-/* line 210, ../sass/style.sass */
+/* line 206, ../sass/style.sass */
 .define {
   color: #55a1a5;
 }
 
-/* line 213, ../sass/style.sass */
+/* line 209, ../sass/style.sass */
 .parameters, .interpol, .date {
   color: #f6853c;
 }
 
-/* line 216, ../sass/style.sass */
+/* line 212, ../sass/style.sass */
 .rocket {
   color: #8a5ba2;
 }
 
-/* line 219, ../sass/style.sass */
+/* line 215, ../sass/style.sass */
 .comment {
   color: #8e908c;
 }
 
-/* line 222, ../sass/style.sass */
+/* line 218, ../sass/style.sass */
 .block {
   color: #8a5ba2;
 }
 
-/* line 225, ../sass/style.sass */
+/* line 221, ../sass/style.sass */
 .method {
   color: #4173a9;
 }
 
-/* line 228, ../sass/style.sass */
+/* line 224, ../sass/style.sass */
 .headline {
   color: #7d954e;
 }
