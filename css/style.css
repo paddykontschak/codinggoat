@@ -266,7 +266,12 @@ ol:first-child {
   content: "\0000a0";
 }
 
-/* line 164, ../sass/style.sass */
+/* line 163, ../sass/style.sass */
+.string {
+  color: #708b2c;
+}
+
+/* line 167, ../sass/style.sass */
 .end:after {
   content: ";";
   color: #4d4d4d;
