@@ -25,13 +25,14 @@ ul
 
 ol
   margin: 0
-  padding: 0 0 100px 10px
+  padding: 0 0 100px
   list-style-type: none
   font-size: 14px
   font-family: 'Inconsolata', monospace
   & > li
     display: block
     width: 100%
+    padding: 0 10px
     color: #4d4d4d
     counter-increment: customlistcounter
     a
@@ -137,6 +138,12 @@ ol
     color: #c3d1cf
   .highlighted
     background: #202122
+  a
+    color: #b2af66 - #333333
+    text-decoration: none
+    &:active,
+    &:hover
+      color: #b2af66
 
 .indent
   &:before
