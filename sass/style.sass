@@ -71,9 +71,14 @@ ol
   float: right
   &.NSWindow
     width: 200px
+    height: 235px
+    .NSView
+      padding-top: 5px
+      p:first-child
+        font-weight: bold
 
 #tree
-  width: 80px
+  width: 100px
   height: 620px
   padding: 10px
   color: #455563
@@ -81,13 +86,16 @@ ol
   +box-shadow(#bdbdbd -1px 0 inset)
 
 #textfield
-  width: 850px
+  width: 830px
   height: 640px
   padding: 0
   color: #a7a7a7
   background-color: #fdf6e5
   overflow: scroll
-  +text-shadow(0, 0, 0)
+  +text-shadow(0 0 0)
+
+#scroller
+  white-space: nowrap
 
 #statusbar
   height: 21px
@@ -102,12 +110,11 @@ ol
   width: 16px
   height: 16px
   display: block
-  float: right
-  margin: 4px 4px 0
-  font-size: 16px
+  margin: 9px 4px 0
+  font-size: 22px
   +rotate(180deg)
   &::after
-    content: "\00A9"
+    content: "\2699"
 
 /* Syntax highlighting */
 
@@ -124,8 +131,8 @@ ol
 
 .copy
   background: #191919
-  color: #bcd1cf
-  width: 840px
+  color: #c3d1cf
+  width: 810px
   height: 540px
 
 .indent
