@@ -1,8 +1,28 @@
-%pre
-  :preserve
-    #
-    #    (_(
-    #    /_/'_____/)
-    #    "  |      |
-    #       |""""""| this ascii goat ate my copyright...
-    #
+%style{:type => "text/css", :media => "all"} @import "css/style.css";
+%ol.copy
+  %li #
+  %li
+    \#
+    - 2.times do
+      &nbsp;
+    (_(
+  %li
+    \#
+    - 2.times do
+      &nbsp;
+    \/_/'_____/)
+  %li
+    \#
+    - 2.times do
+      &nbsp;
+    "
+    |
+    - 2.times do
+      &nbsp;
+    &nbsp;|
+  %li
+    \#
+    - 3.times do
+      &nbsp;
+    |""""""| this ascii goat ate my copyright...
+  %li #

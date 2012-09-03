@@ -26,7 +26,7 @@ ul
 
 ol
   margin: 0
-  padding: 0
+  padding: 0 0 100px
   list-style-type: none
   font-size: 14px
   font-family: 'Inconsolata', sans-serif
@@ -51,6 +51,11 @@ ol
       float: left
   &:first-child
     counter-reset: customlistcounter
+  &.copy
+    & > li
+      &:before
+        color: #6f706f
+        border-right: 1px dotted #323332
 
 #app
   display: block
@@ -144,6 +149,10 @@ ol
     .string
       &:before
         content: ""
+
+.copy
+  background: #191919
+  color: #bcd1cf
 
 .indent
   &:before
