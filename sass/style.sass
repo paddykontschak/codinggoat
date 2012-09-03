@@ -132,26 +132,26 @@ ol
 .haml
   color: #cd264c
 
-.css
-  &:after
-    content: "}"
-
 .class
   color: #cd264c
   &:after
     content: " {"
+    color: #4d4d4d
     white-space-collapsing: discard
 
 .property
   color: #ca9d36
   &:after
     content: ":"
-    margin: 0
-    padding: 0
+    color: #4d4d4d
     white-space-collapsing: discard
 
 .value
   color: #f6853c
+  &:after
+    content: ","
+    color: #4d4d4d
+    white-space-collapsing: discard
 
 .reference
   color: #4173a9
@@ -163,4 +163,5 @@ ol
 .end
   &:after
     content: ";"
+    color: #4d4d4d
     white-space-collapsing: discard
