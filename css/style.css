@@ -228,7 +228,7 @@ ol:first-child {
 
 /* Syntax highlighting */
 /* line 137, ../sass/style.sass */
-.haml {
+.haml, .link {
   color: #cd264c;
 }
 
@@ -348,4 +348,9 @@ ol:first-child {
 /* line 216, ../sass/style.sass */
 .method {
   color: #4173a9;
+}
+
+/* line 219, ../sass/style.sass */
+.headline {
+  color: #7d954e;
 }
