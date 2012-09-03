@@ -35,6 +35,12 @@ ol
     width: 100%
     color: #4d4d4d
     counter-increment: customlistcounter
+    a
+      color: #708b2c
+      text-decoration: none
+      &:active,
+      &:hover
+        color: #708b2c - #333333
     &:before
       content: counter(customlistcounter) " "
       width: 19px
@@ -43,7 +49,6 @@ ol
       text-align: right
       border-right: 1px dotted #e4e4e4
       float: left
-
   &:first-child
     counter-reset: customlistcounter
 
@@ -106,12 +111,6 @@ ol
   color: #a7a7a7
   background-color: #fff
   overflow: scroll
-  a
-    color: #708b2c
-    &:visited,
-    &:active,
-    &:hover
-      color: #708b2c - #333333
 
 #scroller
   width: 762px
@@ -147,6 +146,8 @@ ol
 
 .property
   color: #ca9d36
+  &:before
+    content: "\0000a0"
   &:after
     content: ":"
     color: #4d4d4d
@@ -164,10 +165,17 @@ ol
 
 .value, .reference
   &:before
-    content: "\0000a0"
+    content: "\0000a0 \0000a0"
 
 .string
   color: #708b2c
+
+.integer
+  color: #89beac
+
+.empty
+  &:after
+    content: ""
 
 .end
   &:after
