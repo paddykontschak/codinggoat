@@ -19,12 +19,13 @@ body
 ul
   margin: 0
   padding: 0
+  list-style-type: none
   li
     margin: 2px
 
 ol
   margin: 0
-  padding: 0 0 100px
+  padding: 0 0 100px 10px
   list-style-type: none
   font-size: 14px
   font-family: 'Inconsolata', monospace
@@ -59,7 +60,7 @@ ol
   float: left
   &.NSWindow
     width: 950px
-    height: 681px
+    height: 684px
     .NSView
       padding: 0
       height: 640px
@@ -80,15 +81,13 @@ ol
   +box-shadow(#bdbdbd -1px 0 inset)
 
 #textfield
-  width: 830px
+  width: 850px
   height: 640px
-  padding: 0 10px
+  padding: 0
   color: #a7a7a7
   background-color: #fdf6e5
   overflow: scroll
-
-#scroller
-  width: 762px
+  +text-shadow(0, 0, 0)
 
 #statusbar
   height: 21px
@@ -103,6 +102,9 @@ ol
   width: 16px
   height: 16px
   display: block
+  float: right
+  margin: 4px 4px 0
+  font-size: 16px
   +rotate(180deg)
   &::after
     content: "\00A9"
@@ -115,7 +117,7 @@ ol
 .coffee
   .string
     &:before
-      content: "\0000a0"
+      content: "\0000a0 \0000a0"
     .string
       &:before
         content: ""
@@ -123,10 +125,12 @@ ol
 .copy
   background: #191919
   color: #bcd1cf
+  width: 840px
+  height: 540px
 
 .indent
   &:before
-    content: "\0000a0"
+    content: "\0000a0 \0000a0"
 
 .class
   color: #cd264c
@@ -137,7 +141,7 @@ ol
 .property
   color: #ca9d36
   &:before
-    content: "\0000a0"
+    content: "\0000a0 \0000a0"
   &:after
     content: ":"
     color: #4d4d4d
@@ -153,7 +157,7 @@ ol
 
 .value, .reference
   &:before
-    content: "\0000a0 \0000a0"
+    content: "\0000a0 \0000a0 \0000a0 \0000a0"
 
 .string
   color: #708b2c

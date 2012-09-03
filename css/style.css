@@ -25,37 +25,38 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
-/* line 22, ../sass/style.sass */
+/* line 23, ../sass/style.sass */
 ul li {
   margin: 2px;
 }
 
-/* line 25, ../sass/style.sass */
+/* line 26, ../sass/style.sass */
 ol {
   margin: 0;
-  padding: 0 0 100px;
+  padding: 0 0 100px 10px;
   list-style-type: none;
   font-size: 14px;
   font-family: "Inconsolata", monospace;
 }
-/* line 31, ../sass/style.sass */
+/* line 32, ../sass/style.sass */
 ol > li {
   display: block;
   width: 100%;
   color: #4d4d4d;
   counter-increment: customlistcounter;
 }
-/* line 36, ../sass/style.sass */
+/* line 37, ../sass/style.sass */
 ol > li a {
   color: #3d5800;
   text-decoration: none;
 }
-/* line 39, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 ol > li a:active, ol > li a:hover {
   color: #708b2c;
 }
-/* line 42, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 ol > li:before {
   content: counter(customlistcounter) " ";
   width: 19px;
@@ -65,45 +66,45 @@ ol > li:before {
   border-right: 1px dotted #e4e4e4;
   float: left;
 }
-/* line 50, ../sass/style.sass */
+/* line 51, ../sass/style.sass */
 ol:first-child {
   counter-reset: customlistcounter;
 }
-/* line 54, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 ol.copy > li:before {
   color: #6f706f;
   border-right: 1px dotted #323332;
 }
 
-/* line 58, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 #editor {
   float: left;
 }
-/* line 60, ../sass/style.sass */
+/* line 61, ../sass/style.sass */
 #editor.NSWindow {
   width: 950px;
-  height: 681px;
+  height: 684px;
 }
-/* line 63, ../sass/style.sass */
+/* line 64, ../sass/style.sass */
 #editor.NSWindow .NSView {
   padding: 0;
   height: 640px;
 }
-/* line 66, ../sass/style.sass */
+/* line 67, ../sass/style.sass */
 #editor.NSWindow .NSView > div {
   float: left;
 }
 
-/* line 69, ../sass/style.sass */
+/* line 70, ../sass/style.sass */
 #info {
   float: right;
 }
-/* line 71, ../sass/style.sass */
+/* line 72, ../sass/style.sass */
 #info.NSWindow {
   width: 200px;
 }
 
-/* line 74, ../sass/style.sass */
+/* line 75, ../sass/style.sass */
 #tree {
   width: 80px;
   height: 620px;
@@ -115,22 +116,18 @@ ol.copy > li:before {
   box-shadow: #bdbdbd -1px 0 inset;
 }
 
-/* line 82, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 #textfield {
-  width: 830px;
+  width: 850px;
   height: 640px;
-  padding: 0 10px;
+  padding: 0;
   color: #a7a7a7;
   background-color: #fdf6e5;
   overflow: scroll;
+  text-shadow: 0, 0, 0;
 }
 
-/* line 90, ../sass/style.sass */
-#scroller {
-  width: 762px;
-}
-
-/* line 93, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 #statusbar {
   height: 21px;
   display: block;
@@ -152,149 +149,154 @@ ol.copy > li:before {
   *zoom: 1;
 }
 
-/* line 102, ../sass/style.sass */
+/* line 101, ../sass/style.sass */
 #copyleft {
   width: 16px;
   height: 16px;
   display: block;
+  float: right;
+  margin: 4px 4px 0;
+  font-size: 16px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 107, ../sass/style.sass */
+/* line 109, ../sass/style.sass */
 #copyleft::after {
   content: "\00A9";
 }
 
 /* Syntax highlighting */
-/* line 112, ../sass/style.sass */
+/* line 114, ../sass/style.sass */
 .haml, .link {
   color: #cd264c;
 }
 
-/* line 117, ../sass/style.sass */
+/* line 119, ../sass/style.sass */
 .coffee .string:before {
-  content: "\0000a0";
+  content: "\0000a0 \0000a0";
 }
-/* line 120, ../sass/style.sass */
+/* line 122, ../sass/style.sass */
 .coffee .string .string:before {
   content: "";
 }
 
-/* line 123, ../sass/style.sass */
+/* line 125, ../sass/style.sass */
 .copy {
   background: #191919;
   color: #bcd1cf;
+  width: 840px;
+  height: 540px;
 }
 
-/* line 128, ../sass/style.sass */
+/* line 132, ../sass/style.sass */
 .indent:before {
-  content: "\0000a0";
+  content: "\0000a0 \0000a0";
 }
 
-/* line 131, ../sass/style.sass */
+/* line 135, ../sass/style.sass */
 .class {
   color: #cd264c;
 }
-/* line 133, ../sass/style.sass */
+/* line 137, ../sass/style.sass */
 .class:after {
   content: " {";
   color: #4d4d4d;
 }
 
-/* line 137, ../sass/style.sass */
+/* line 141, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
-/* line 139, ../sass/style.sass */
+/* line 143, ../sass/style.sass */
 .property:before {
-  content: "\0000a0";
+  content: "\0000a0 \0000a0";
 }
-/* line 141, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 .property:after {
   content: ":";
   color: #4d4d4d;
 }
 
-/* line 145, ../sass/style.sass */
+/* line 149, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
-/* line 147, ../sass/style.sass */
+/* line 151, ../sass/style.sass */
 .value:after {
   content: ",";
   color: #4d4d4d;
 }
 
-/* line 151, ../sass/style.sass */
+/* line 155, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
 
-/* line 155, ../sass/style.sass */
+/* line 159, ../sass/style.sass */
 .value:before, .reference:before {
-  content: "\0000a0 \0000a0";
+  content: "\0000a0 \0000a0 \0000a0 \0000a0";
 }
 
-/* line 158, ../sass/style.sass */
+/* line 162, ../sass/style.sass */
 .string {
   color: #708b2c;
 }
 
-/* line 161, ../sass/style.sass */
+/* line 165, ../sass/style.sass */
 .integer {
   color: #89beac;
 }
 
-/* line 165, ../sass/style.sass */
+/* line 169, ../sass/style.sass */
 .empty:after {
   content: "";
 }
 
-/* line 169, ../sass/style.sass */
+/* line 173, ../sass/style.sass */
 .end:after {
   content: ";";
   color: #4d4d4d;
 }
 
-/* line 173, ../sass/style.sass */
+/* line 177, ../sass/style.sass */
 .function {
   color: #4173b1;
 }
 
-/* line 176, ../sass/style.sass */
+/* line 180, ../sass/style.sass */
 .define {
   color: #55a1a5;
 }
 
-/* line 179, ../sass/style.sass */
+/* line 183, ../sass/style.sass */
 .parameters, .interpol, .date {
   color: #f6853c;
 }
 
-/* line 182, ../sass/style.sass */
+/* line 186, ../sass/style.sass */
 .rocket {
   color: #8a5ba2;
 }
 
-/* line 185, ../sass/style.sass */
+/* line 189, ../sass/style.sass */
 .comment {
   color: #8e908c;
 }
 
-/* line 188, ../sass/style.sass */
+/* line 192, ../sass/style.sass */
 .block {
   color: #8a5ba2;
 }
 
-/* line 191, ../sass/style.sass */
+/* line 195, ../sass/style.sass */
 .method {
   color: #4173a9;
 }
 
-/* line 194, ../sass/style.sass */
+/* line 198, ../sass/style.sass */
 .headline {
   color: #7d954e;
 }
