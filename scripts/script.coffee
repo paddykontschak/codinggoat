@@ -1,27 +1,35 @@
-$(document).ready ->
-  $("#scroller").load "info.html"
+current = (page) ->
+  $("#scroller").load "#{page}.html"
+  $("#tree li").removeClass "current_page"
+  if page == "info"
+    $("#index").closest("li").addClass "current_page"
+  else
+    $("##{page}").closest("li").addClass "current_page"
   0
 
+$(document).ready ->
+  current("info")
+
   $("#index").on "click", (event) ->
-    $("#scroller").load "info.html"
+    current("info")
     0
 
   $("#skills").on "click", (event) ->
-    $("#scroller").load "skills.html"
+    current("skills")
     0
 
   $("#education").on "click", (event) ->
-    $("#scroller").load "education.html"
+    current("education")
     0
 
   $("#work").on "click", (event) ->
-    $("#scroller").load "work.html"
+    current("work")
     0
 
   $("#contact").on "click", (event) ->
-    $("#scroller").load "contact.html"
+    current("contact")
     0
 
   $("#copyleft").on "click", (event) ->
-    $("#scroller").load "copyleft.html"
+    current("copyleft")
     0

@@ -21,7 +21,10 @@ ul
   padding: 0
   list-style-type: none
   li
-    margin: 2px
+    margin-right: 1px
+    a
+      display: block
+      padding: 2px 12px 2px 11px 
 
 ol
   margin: 0
@@ -72,19 +75,25 @@ ol
   float: right
   &.NSWindow
     width: 200px
-    height: 235px
+    height: 245px
     .NSView
       padding-top: 5px
       p:first-child
         font-weight: bold
 
 #tree
-  width: 100px
+  width: 120px
   height: 620px
-  padding: 10px
+  padding: 10px 0
   color: #455563
   background-color: #e6eaef
   +box-shadow(#bdbdbd -1px 0 inset)
+
+.current_page
+  color: #f3ffff
+  +text-shadow(0px 1px 1px rgba(#000, .5))
+  +background(linear-gradient(#67b1df, #3489cc))
+  +box-shadow(#5aa5da 0 1px inset, #6fbae5 0 2px inset, #307cbc 0 -1px inset)
 
 #textfield
   width: 830px
