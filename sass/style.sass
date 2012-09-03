@@ -36,11 +36,11 @@ ol
     color: #4d4d4d
     counter-increment: customlistcounter
     a
-      color: #708b2c
+      color: #708b2c - #333333
       text-decoration: none
       &:active,
       &:hover
-        color: #708b2c - #333333
+        color: #708b2c
     &:before
       content: counter(customlistcounter) " "
       width: 19px
@@ -145,6 +145,9 @@ ol
       &:before
         content: ""
 
+.indent
+  &:before
+    content: "\0000a0"
 
 .class
   color: #cd264c
@@ -198,8 +201,17 @@ ol
 .define
   color: #55a1a5
 
-.parameters, .interpol
+.parameters, .interpol, .date
   color: #f6853c
 
 .rocket
   color: #8a5ba2
+
+.comment
+  color: #8e908c
+
+.block
+  color: #8a5ba2
+
+.method
+  color: #4173a9
