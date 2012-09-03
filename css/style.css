@@ -3,19 +3,8 @@
  */
 /* line 7, ../sass/style.sass */
 html {
-  display: table;
-  width: 100%;
   height: 100%;
-}
-
-/* line 12, ../sass/style.sass */
-body {
-  margin: 0px;
-  padding: 50px;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: "Lucida Grande";
-  font-size: 12px;
+  margin: 0;
   background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #33799d), color-stop(100%, #e8ebb4));
   background: -webkit-linear-gradient(top left, #33799d, #e8ebb4);
   background: -moz-linear-gradient(top left, #33799d, #e8ebb4);
@@ -23,17 +12,26 @@ body {
   background: linear-gradient(top left, #33799d, #e8ebb4);
 }
 
-/* line 21, ../sass/style.sass */
+/* line 12, ../sass/style.sass */
+body {
+  width: 1210px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Lucida Grande";
+  font-size: 12px;
+}
+
+/* line 19, ../sass/style.sass */
 ul {
   margin: 0;
   padding: 0;
 }
-/* line 24, ../sass/style.sass */
+/* line 22, ../sass/style.sass */
 ul li {
   margin: 2px;
 }
 
-/* line 27, ../sass/style.sass */
+/* line 25, ../sass/style.sass */
 ol {
   margin: 0;
   padding: 0 0 100px;
@@ -41,23 +39,23 @@ ol {
   font-size: 14px;
   font-family: "Inconsolata", monospace;
 }
-/* line 33, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 ol > li {
   display: block;
   width: 100%;
   color: #4d4d4d;
   counter-increment: customlistcounter;
 }
-/* line 38, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
 ol > li a {
   color: #3d5800;
   text-decoration: none;
 }
-/* line 41, ../sass/style.sass */
+/* line 39, ../sass/style.sass */
 ol > li a:active, ol > li a:hover {
   color: #708b2c;
 }
-/* line 44, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 ol > li:before {
   content: counter(customlistcounter) " ";
   width: 19px;
@@ -67,106 +65,45 @@ ol > li:before {
   border-right: 1px dotted #e4e4e4;
   float: left;
 }
-/* line 52, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 ol:first-child {
   counter-reset: customlistcounter;
 }
-/* line 56, ../sass/style.sass */
+/* line 54, ../sass/style.sass */
 ol.copy > li:before {
   color: #6f706f;
   border-right: 1px dotted #323332;
 }
 
+/* line 58, ../sass/style.sass */
+#editor {
+  float: left;
+}
 /* line 60, ../sass/style.sass */
-#app {
-  display: block;
-  width: 882px;
-  height: 684px;
-  margin: 0 auto;
-  background-color: #ededed;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px, rgba(0, 0, 0, 0.1) -1px -1px, rgba(0, 0, 0, 0.1) 1px -1px, rgba(0, 0, 0, 0.1) -1px 1px, rgba(0, 0, 0, 0.8) 0 0 70px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px, rgba(0, 0, 0, 0.1) -1px -1px, rgba(0, 0, 0, 0.1) 1px -1px, rgba(0, 0, 0, 0.1) -1px 1px, rgba(0, 0, 0, 0.8) 0 0 70px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px, rgba(0, 0, 0, 0.1) -1px -1px, rgba(0, 0, 0, 0.1) 1px -1px, rgba(0, 0, 0, 0.1) -1px 1px, rgba(0, 0, 0, 0.8) 0 0 70px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+#editor.NSWindow {
+  width: 950px;
+  height: 681px;
+}
+/* line 63, ../sass/style.sass */
+#editor.NSWindow .NSView {
+  padding: 0;
+  height: 640px;
+}
+/* line 66, ../sass/style.sass */
+#editor.NSWindow .NSView > div {
+  float: left;
 }
 
 /* line 69, ../sass/style.sass */
-#toolbar {
-  height: 21px;
-  display: block;
-  border-bottom: solid 1px #686868;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4e4e4), color-stop(100%, #b8b7b8));
-  background: -webkit-linear-gradient(#e4e4e4, #b8b7b8);
-  background: -moz-linear-gradient(#e4e4e4, #b8b7b8);
-  background: -o-linear-gradient(#e4e4e4, #b8b7b8);
-  background: linear-gradient(#e4e4e4, #b8b7b8);
-  -webkit-box-shadow: #f1f1f1 0 1px inset;
-  -moz-box-shadow: #f1f1f1 0 1px inset;
-  box-shadow: #f1f1f1 0 1px inset;
-  -webkit-border-radius: 6px 6px 0 0;
-  -moz-border-radius: 6px 6px 0 0;
-  -ms-border-radius: 6px 6px 0 0;
-  -o-border-radius: 6px 6px 0 0;
-  border-radius: 6px 6px 0 0;
+#info {
+  float: right;
+}
+/* line 71, ../sass/style.sass */
+#info.NSWindow {
+  width: 200px;
 }
 
-/* line 77, ../sass/style.sass */
-#traffic-light {
-  display: inline;
-  margin-left: 4px;
-  float: left;
-}
-/* line 81, ../sass/style.sass */
-#traffic-light .aqua {
-  width: 12px;
-  height: 12px;
-  display: block;
-  margin: 5px 4px 4px 4px;
-  background: black;
-  float: left;
-  background-image: -webkit-gradient(radial, 6px 18px, 0, 6px 18px, 5, color-stop(40%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(radial, 6px -1px, 0, 6px -1px, 3, color-stop(33.33333%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0)));
-  background-image: -webkit-radial-gradient(6px 18px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 5px), -webkit-radial-gradient(6px -1px, #ffffff 1px, rgba(255, 255, 255, 0) 3px);
-  background-image: -moz-radial-gradient(6px 18px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 5px), -moz-radial-gradient(6px -1px, #ffffff 1px, rgba(255, 255, 255, 0) 3px);
-  background-image: -o-radial-gradient(6px 18px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 5px), -o-radial-gradient(6px -1px, #ffffff 1px, rgba(255, 255, 255, 0) 3px);
-  background-image: radial-gradient(6px 18px, rgba(255, 255, 255, 0.7) 2px, rgba(255, 255, 255, 0) 5px), radial-gradient(6px -1px, #ffffff 1px, rgba(255, 255, 255, 0) 3px);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.9) 0 1px 4px inset, rgba(255, 255, 255, 0.5) 0 1px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.9) 0 1px 4px inset, rgba(255, 255, 255, 0.5) 0 1px;
-  box-shadow: rgba(0, 0, 0, 0.9) 0 1px 4px inset, rgba(255, 255, 255, 0.5) 0 1px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  border-radius: 100px;
-}
-/* line 91, ../sass/style.sass */
-#traffic-light .aqua#red {
-  background-color: #f24443;
-}
-/* line 93, ../sass/style.sass */
-#traffic-light .aqua#yellow {
-  background-color: #f0aa5a;
-}
-/* line 95, ../sass/style.sass */
-#traffic-light .aqua#green {
-  background-color: #88be72;
-}
-
-/* line 98, ../sass/style.sass */
-#view {
-  width: 882px;
-  height: 640px;
-}
-/* line 101, ../sass/style.sass */
-#view div {
-  display: inline;
-  float: left;
-}
-
-/* line 104, ../sass/style.sass */
+/* line 74, ../sass/style.sass */
 #tree {
   width: 80px;
   height: 620px;
@@ -178,9 +115,9 @@ ol.copy > li:before {
   box-shadow: #bdbdbd -1px 0 inset;
 }
 
-/* line 112, ../sass/style.sass */
+/* line 82, ../sass/style.sass */
 #textfield {
-  width: 762px;
+  width: 830px;
   height: 640px;
   padding: 0 10px;
   color: #a7a7a7;
@@ -188,12 +125,12 @@ ol.copy > li:before {
   overflow: scroll;
 }
 
-/* line 120, ../sass/style.sass */
+/* line 90, ../sass/style.sass */
 #scroller {
   width: 762px;
 }
 
-/* line 123, ../sass/style.sass */
+/* line 93, ../sass/style.sass */
 #statusbar {
   height: 21px;
   display: block;
@@ -215,7 +152,7 @@ ol.copy > li:before {
   *zoom: 1;
 }
 
-/* line 132, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 #copyleft {
   width: 16px;
   height: 16px;
@@ -226,138 +163,138 @@ ol.copy > li:before {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 137, ../sass/style.sass */
+/* line 107, ../sass/style.sass */
 #copyleft::after {
   content: "\00A9";
 }
 
 /* Syntax highlighting */
-/* line 142, ../sass/style.sass */
+/* line 112, ../sass/style.sass */
 .haml, .link {
   color: #cd264c;
 }
 
-/* line 147, ../sass/style.sass */
+/* line 117, ../sass/style.sass */
 .coffee .string:before {
   content: "\0000a0";
 }
-/* line 150, ../sass/style.sass */
+/* line 120, ../sass/style.sass */
 .coffee .string .string:before {
   content: "";
 }
 
-/* line 153, ../sass/style.sass */
+/* line 123, ../sass/style.sass */
 .copy {
   background: #191919;
   color: #bcd1cf;
 }
 
-/* line 158, ../sass/style.sass */
+/* line 128, ../sass/style.sass */
 .indent:before {
   content: "\0000a0";
 }
 
-/* line 161, ../sass/style.sass */
+/* line 131, ../sass/style.sass */
 .class {
   color: #cd264c;
 }
-/* line 163, ../sass/style.sass */
+/* line 133, ../sass/style.sass */
 .class:after {
   content: " {";
   color: #4d4d4d;
 }
 
-/* line 167, ../sass/style.sass */
+/* line 137, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
-/* line 169, ../sass/style.sass */
+/* line 139, ../sass/style.sass */
 .property:before {
   content: "\0000a0";
 }
-/* line 171, ../sass/style.sass */
+/* line 141, ../sass/style.sass */
 .property:after {
   content: ":";
   color: #4d4d4d;
 }
 
-/* line 175, ../sass/style.sass */
+/* line 145, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
-/* line 177, ../sass/style.sass */
+/* line 147, ../sass/style.sass */
 .value:after {
   content: ",";
   color: #4d4d4d;
 }
 
-/* line 181, ../sass/style.sass */
+/* line 151, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
 
-/* line 185, ../sass/style.sass */
+/* line 155, ../sass/style.sass */
 .value:before, .reference:before {
   content: "\0000a0 \0000a0";
 }
 
-/* line 188, ../sass/style.sass */
+/* line 158, ../sass/style.sass */
 .string {
   color: #708b2c;
 }
 
-/* line 191, ../sass/style.sass */
+/* line 161, ../sass/style.sass */
 .integer {
   color: #89beac;
 }
 
-/* line 195, ../sass/style.sass */
+/* line 165, ../sass/style.sass */
 .empty:after {
   content: "";
 }
 
-/* line 199, ../sass/style.sass */
+/* line 169, ../sass/style.sass */
 .end:after {
   content: ";";
   color: #4d4d4d;
 }
 
-/* line 203, ../sass/style.sass */
+/* line 173, ../sass/style.sass */
 .function {
   color: #4173b1;
 }
 
-/* line 206, ../sass/style.sass */
+/* line 176, ../sass/style.sass */
 .define {
   color: #55a1a5;
 }
 
-/* line 209, ../sass/style.sass */
+/* line 179, ../sass/style.sass */
 .parameters, .interpol, .date {
   color: #f6853c;
 }
 
-/* line 212, ../sass/style.sass */
+/* line 182, ../sass/style.sass */
 .rocket {
   color: #8a5ba2;
 }
 
-/* line 215, ../sass/style.sass */
+/* line 185, ../sass/style.sass */
 .comment {
   color: #8e908c;
 }
 
-/* line 218, ../sass/style.sass */
+/* line 188, ../sass/style.sass */
 .block {
   color: #8a5ba2;
 }
 
-/* line 221, ../sass/style.sass */
+/* line 191, ../sass/style.sass */
 .method {
   color: #4173a9;
 }
 
-/* line 224, ../sass/style.sass */
+/* line 194, ../sass/style.sass */
 .headline {
   color: #7d954e;
 }

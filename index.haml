@@ -4,19 +4,23 @@
     %title The Coding Goat
     %meta{:author => "Patrick Kontschak"}
     %style{:type => "text/css", :media => "all"} @import "http://fonts.googleapis.com/css?family=Inconsolata";
+    %style{:type => "text/css", :media => "all"} @import "css/cocoss.css";
     %style{:type => "text/css", :media => "all"} @import "css/style.css";
     /[if lt IE 9]
       %script{:src => "http://html5shim.googlecode.com/svn/trunk/html5.js"}
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}
     %script{:src => "scripts/script.js"}
   %body
-    #app
-      #toolbar
-        #traffic-light
-          .aqua#red
-          .aqua#yellow
-          .aqua#green
-      #view
+    #editor.NSWindow
+      .INTitlebarView
+        .TrafficLightButtons
+          .red
+          .yellow
+          .green
+        .TitleBar
+          The Coding Goat
+        .NSToolbar
+      .NSView
         #tree
           %ul
             %li
@@ -38,3 +42,26 @@
           #scroller
       #statusbar
         %a#copyleft
+    #info.NSWindow
+      .INTitlebarView
+        .TrafficLightButtons
+          .red
+          .yellow
+          .green
+        .TitleBar
+          Info
+        .NSToolbar
+      .NSView
+        %p Don't like code?
+        %p If you want to see a more readable resume you can go to any of these pages:
+        %ul
+          %li
+            %a{:href => "https://www.linkedin.com/in/paddykontschak"} LinkedIn
+          %li
+            %a{:href => "http://beknown.com/patrick-kontschak"} Monster
+          %li
+            %a{:href => "http://resume.github.com/?paddykontschak"} Resume.Github.com
+          %li
+            %a{:href => "http://careers.stackoverflow.com/paddykontschak"} StackOverflow
+          %li
+            %a{:href => "http://zerp.ly/paddykontschak"} Zerply

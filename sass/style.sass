@@ -5,18 +5,16 @@
 @import "compass"
 
 html
-  display: table
-  width: 100%
   height: 100%
+  margin: 0
+  +background(linear-gradient(top left, #33799d, #e8ebb4))
 
 body
-  margin: 0px
-  padding: 50px
-  display: table-cell
-  vertical-align: middle
+  width: 950px + 200px + 60px
+  margin: 0 auto
+  padding: 40px
   font-family: "Lucida Grande"
   font-size: 12px
-  +background(linear-gradient(top left, #33799d, #e8ebb4))
 
 ul
   margin: 0
@@ -57,49 +55,21 @@ ol
         color: #6f706f
         border-right: 1px dotted #323332
 
-#app
-  display: block
-  width: 882px
-  height: 684px
-  margin: 0 auto
-  background-color: #ededed
-  +box-shadow(rgba(#000, .1) 1px 1px, rgba(#000, .1) -1px -1px, rgba(#000, .1) 1px -1px, rgba(#000, .1) -1px 1px, rgba(#000, .8) 0 0 70px)
-  +border-radius(5px)
-
-#toolbar
-  height: 21px
-  display: block
-  border-bottom: solid 1px #686868
-  +background(linear-gradient(#e4e4e4, #b8b7b8))
-  +box-shadow(#f1f1f1 0 1px inset)
-  +border-radius(6px 6px 0 0)
-
-#traffic-light
-  display: inline
-  margin-left: 4px
+#editor
   float: left
-  .aqua
-    width: 12px
-    height: 12px
-    display: block
-    margin: 5px 4px 4px 4px
-    background: #000
-    float: left
-    +background-image(radial-gradient(6px 18px, rgba(#fff, .7) 2px, rgba(#fff, 0) 5px), radial-gradient(6px -1px, #fff 1px, rgba(#fff, 0) 3px))
-    +box-shadow(rgba(#000, .9) 0 1px 4px inset, rgba(#fff, .5) 0 1px)
-    +border-radius(100px)
-    &#red
-      background-color: #f24443
-    &#yellow
-      background-color: #f0aa5a
-    &#green
-      background-color: #88be72
+  &.NSWindow
+    width: 950px
+    height: 681px
+    .NSView
+      padding: 0
+      height: 640px
+      & > div
+        float: left
 
-#view
-  width: 882px
-  height: 640px
-  div
-    +float-left
+#info
+  float: right
+  &.NSWindow
+    width: 200px
 
 #tree
   width: 80px
@@ -110,7 +80,7 @@ ol
   +box-shadow(#bdbdbd -1px 0 inset)
 
 #textfield
-  width: 762px
+  width: 830px
   height: 640px
   padding: 0 10px
   color: #a7a7a7

@@ -4,6 +4,7 @@
     <title>The Coding Goat</title>
     <meta author='Patrick Kontschak'>
     <style media='all' type='text/css'>@import "http://fonts.googleapis.com/css?family=Inconsolata";</style>
+    <style media='all' type='text/css'>@import "css/cocoss.css";</style>
     <style media='all' type='text/css'>@import "css/style.css";</style>
     <!--[if lt IE 9]>
       <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
@@ -12,15 +13,19 @@
     <script src='scripts/script.js'></script>
   </head>
   <body>
-    <div id='app'>
-      <div id='toolbar'>
-        <div id='traffic-light'>
-          <div class='aqua' id='red'></div>
-          <div class='aqua' id='yellow'></div>
-          <div class='aqua' id='green'></div>
+    <div class='NSWindow' id='editor'>
+      <div class='INTitlebarView'>
+        <div class='TrafficLightButtons'>
+          <div class='red'></div>
+          <div class='yellow'></div>
+          <div class='green'></div>
         </div>
+        <div class='TitleBar'>
+          The Coding Goat
+        </div>
+        <div class='NSToolbar'></div>
       </div>
-      <div id='view'>
+      <div class='NSView'>
         <div id='tree'>
           <ul>
             <li>
@@ -56,6 +61,40 @@
       </div>
       <div id='statusbar'>
         <a id='copyleft'></a>
+      </div>
+    </div>
+    <div class='NSWindow' id='info'>
+      <div class='INTitlebarView'>
+        <div class='TrafficLightButtons'>
+          <div class='red'></div>
+          <div class='yellow'></div>
+          <div class='green'></div>
+        </div>
+        <div class='TitleBar'>
+          Info
+        </div>
+        <div class='NSToolbar'></div>
+      </div>
+      <div class='NSView'>
+        <p>Don't like code?</p>
+        <p>If you want to see a more readable resume you can go to any of these pages:</p>
+        <ul>
+          <li>
+            <a href='https://www.linkedin.com/in/paddykontschak'>LinkedIn</a>
+          </li>
+          <li>
+            <a href='http://beknown.com/patrick-kontschak'>Monster</a>
+          </li>
+          <li>
+            <a href='http://resume.github.com/?paddykontschak'>Resume.Github.com</a>
+          </li>
+          <li>
+            <a href='http://careers.stackoverflow.com/paddykontschak'>StackOverflow</a>
+          </li>
+          <li>
+            <a href='http://zerp.ly/paddykontschak'>Zerply</a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
