@@ -221,145 +221,150 @@ ol.copy > li:before {
 }
 
 /* line 145, ../sass/style.sass */
+.html {
+  width: 840px;
+}
+
+/* line 148, ../sass/style.sass */
 .ruby {
   width: 850px;
 }
 
-/* line 148, ../sass/style.sass */
+/* line 151, ../sass/style.sass */
 .copy {
   background: #191919;
   width: 830px;
   height: 540px;
 }
-/* line 152, ../sass/style.sass */
+/* line 155, ../sass/style.sass */
 .copy li {
   color: #c3d1cf;
 }
-/* line 154, ../sass/style.sass */
+/* line 157, ../sass/style.sass */
 .copy .highlighted {
   background: #202122;
 }
-/* line 156, ../sass/style.sass */
+/* line 159, ../sass/style.sass */
 .copy a {
   color: #7f7c33;
   text-decoration: none;
 }
-/* line 159, ../sass/style.sass */
+/* line 162, ../sass/style.sass */
 .copy a:active, .copy a:hover {
   color: #b2af66;
 }
 
-/* line 164, ../sass/style.sass */
+/* line 167, ../sass/style.sass */
 .indent:before {
   content: "\0000a0 \0000a0";
 }
 
-/* line 167, ../sass/style.sass */
+/* line 170, ../sass/style.sass */
 .class {
   color: #cd264c;
 }
-/* line 169, ../sass/style.sass */
+/* line 172, ../sass/style.sass */
 .class:after {
   content: " {";
   color: #4d4d4d;
 }
 
-/* line 173, ../sass/style.sass */
+/* line 176, ../sass/style.sass */
 .property {
   color: #ca9d36;
 }
-/* line 175, ../sass/style.sass */
+/* line 178, ../sass/style.sass */
 .property:before {
   content: "\0000a0 \0000a0";
 }
-/* line 177, ../sass/style.sass */
+/* line 180, ../sass/style.sass */
 .property:after {
   content: ":";
   color: #4d4d4d;
 }
 
-/* line 181, ../sass/style.sass */
+/* line 184, ../sass/style.sass */
 .value {
   color: #f6853c;
 }
-/* line 183, ../sass/style.sass */
+/* line 186, ../sass/style.sass */
 .value:after {
   content: ",";
   color: #4d4d4d;
 }
 
-/* line 187, ../sass/style.sass */
+/* line 190, ../sass/style.sass */
 .reference {
   color: #4173a9;
 }
 
-/* line 191, ../sass/style.sass */
+/* line 194, ../sass/style.sass */
 .value:before, .reference:before {
   content: "\0000a0 \0000a0 \0000a0 \0000a0";
 }
 
-/* line 194, ../sass/style.sass */
+/* line 197, ../sass/style.sass */
 .string {
   color: #708b2c;
 }
 
-/* line 197, ../sass/style.sass */
+/* line 200, ../sass/style.sass */
 .integer {
   color: #89beac;
 }
 
-/* line 201, ../sass/style.sass */
+/* line 204, ../sass/style.sass */
 .empty:after {
   content: "";
 }
 
-/* line 205, ../sass/style.sass */
+/* line 208, ../sass/style.sass */
 .end:after {
   content: ";";
   color: #4d4d4d;
 }
 
-/* line 209, ../sass/style.sass */
+/* line 212, ../sass/style.sass */
 .function {
   color: #4173b1;
 }
 
-/* line 212, ../sass/style.sass */
+/* line 215, ../sass/style.sass */
 .define {
   color: #55a1a5;
 }
 
-/* line 215, ../sass/style.sass */
+/* line 218, ../sass/style.sass */
 .parameters, .interpol, .date {
   color: #f6853c;
 }
 
-/* line 218, ../sass/style.sass */
+/* line 221, ../sass/style.sass */
 .rocket {
   color: #8a5ba2;
 }
 
-/* line 221, ../sass/style.sass */
+/* line 224, ../sass/style.sass */
 .comment {
   color: #8e908c;
 }
 
-/* line 224, ../sass/style.sass */
+/* line 227, ../sass/style.sass */
 .block {
   color: #8a5ba2;
 }
 
-/* line 227, ../sass/style.sass */
+/* line 230, ../sass/style.sass */
 .method {
   color: #4173a9;
 }
 
-/* line 230, ../sass/style.sass */
+/* line 233, ../sass/style.sass */
 .headline {
   color: #7d954e;
 }
 
-/* line 233, ../sass/style.sass */
+/* line 236, ../sass/style.sass */
 .highlighted {
   background: #eee8d7;
 }
