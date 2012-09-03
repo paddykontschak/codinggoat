@@ -39,7 +39,7 @@ ol {
   padding: 0 0 100px;
   list-style-type: none;
   font-size: 14px;
-  font-family: "Inconsolata", sans-serif;
+  font-family: "Inconsolata", monospace;
 }
 /* line 33, ../sass/style.sass */
 ol > li {
@@ -184,7 +184,7 @@ ol.copy > li:before {
   height: 640px;
   padding: 0 10px;
   color: #a7a7a7;
-  background-color: white;
+  background-color: #fdf6e5;
   overflow: scroll;
 }
 
