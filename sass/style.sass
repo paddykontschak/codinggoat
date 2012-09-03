@@ -137,6 +137,15 @@ ol
 .haml
   color: #cd264c
 
+.coffee
+  .string
+    &:before
+      content: "\0000a0"
+    .string
+      &:before
+        content: ""
+
+
 .class
   color: #cd264c
   &:after
@@ -182,3 +191,15 @@ ol
     content: ";"
     color: #4d4d4d
     white-space-collapsing: discard
+
+.function
+  color: #4173b1
+
+.define
+  color: #55a1a5
+
+.parameters, .interpol
+  color: #f6853c
+
+.rocket
+  color: #8a5ba2
