@@ -126,7 +126,7 @@ ol.copy > li:before {
 /* line 108, ../sass/style.sass */
 #tree {
   width: 120px;
-  height: 620px;
+  height: 636px;
   padding: 2px 0;
   color: #455563;
   background-color: #e6eaef;
@@ -163,7 +163,7 @@ ol.copy > li:before {
   height: 640px;
   padding: 0;
   color: #4d4d4c;
-  background-color: #e6eaef;
+  background-color: #fdf6e3;
   overflow: scroll;
   text-shadow: 0 0 0;
 }
