@@ -1,7 +1,7 @@
 /*
  * Hi, this website was created by Patrick Kontschak.
  */
-/* line 7, ../sass/style.sass */
+/* line 27, ../sass/style.sass */
 html {
   height: 100%;
   margin: 0;
@@ -9,7 +9,7 @@ html {
   background-size: cover;
 }
 
-/* line 13, ../sass/style.sass */
+/* line 33, ../sass/style.sass */
 body {
   width: 1210px;
   margin: 0 auto;
@@ -18,28 +18,28 @@ body {
   font-size: 12px;
 }
 
-/* line 20, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 a {
   text-decoration: none;
 }
 
-/* line 23, ../sass/style.sass */
+/* line 43, ../sass/style.sass */
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 27, ../sass/style.sass */
+/* line 47, ../sass/style.sass */
 ul li {
   margin-right: 1px;
 }
-/* line 29, ../sass/style.sass */
+/* line 49, ../sass/style.sass */
 ul li a {
   display: block;
   padding: 2px 12px 2px 11px;
 }
 
-/* line 33, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 ol {
   margin: 0;
   padding: 0 0 100px;
@@ -47,22 +47,22 @@ ol {
   font-size: 14px;
   font-family: "Inconsolata", monospace;
 }
-/* line 39, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 ol > li {
   display: block;
   width: 100%;
   color: #4d4d4d;
   counter-increment: customlistcounter;
 }
-/* line 44, ../sass/style.sass */
+/* line 64, ../sass/style.sass */
 ol > li a {
   color: #3d5800;
 }
-/* line 46, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 ol > li a:active, ol > li a:hover {
   color: #708b2c;
 }
-/* line 49, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 ol > li:before {
   content: counter(customlistcounter) " ";
   width: 19px;
@@ -72,58 +72,62 @@ ol > li:before {
   border-right: 1px dotted #e4e4e4;
   float: left;
 }
-/* line 57, ../sass/style.sass */
+/* line 77, ../sass/style.sass */
+ol > li:after {
+  color: #4d4d4c;
+}
+/* line 79, ../sass/style.sass */
 ol:first-child {
   counter-reset: customlistcounter;
 }
-/* line 61, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 ol.copy > li:before {
   color: #6f706f;
   border-right: 1px dotted #323332;
 }
 
-/* line 65, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 #editor {
   float: left;
 }
-/* line 67, ../sass/style.sass */
+/* line 89, ../sass/style.sass */
 #editor.NSWindow {
   width: 950px;
   height: 684px;
 }
-/* line 70, ../sass/style.sass */
+/* line 92, ../sass/style.sass */
 #editor.NSWindow .NSView {
   padding: 0;
   height: 640px;
 }
-/* line 73, ../sass/style.sass */
+/* line 95, ../sass/style.sass */
 #editor.NSWindow .NSView > div {
   float: left;
 }
 
-/* line 76, ../sass/style.sass */
+/* line 98, ../sass/style.sass */
 #info {
   float: right;
 }
-/* line 78, ../sass/style.sass */
+/* line 100, ../sass/style.sass */
 #info.NSWindow {
   width: 200px;
   height: 245px;
 }
-/* line 81, ../sass/style.sass */
+/* line 103, ../sass/style.sass */
 #info.NSWindow .NSView {
   padding-top: 5px;
 }
-/* line 83, ../sass/style.sass */
+/* line 105, ../sass/style.sass */
 #info.NSWindow .NSView p:first-child {
   font-weight: bold;
 }
 
-/* line 86, ../sass/style.sass */
+/* line 108, ../sass/style.sass */
 #tree {
   width: 120px;
   height: 620px;
-  padding: 10px 0;
+  padding: 2px 0;
   color: #455563;
   background-color: #e6eaef;
   -webkit-box-shadow: #bdbdbd -1px 0 inset;
@@ -131,7 +135,15 @@ ol.copy > li:before {
   box-shadow: #bdbdbd -1px 0 inset;
 }
 
-/* line 94, ../sass/style.sass */
+/* line 116, ../sass/style.sass */
+.nav {
+  color: #707e8b;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 12px 2px 11px;
+}
+
+/* line 122, ../sass/style.sass */
 .current_page {
   color: #f3ffff;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
@@ -145,23 +157,23 @@ ol.copy > li:before {
   box-shadow: #5aa5da 0 1px inset, #6fbae5 0 2px inset, #307cbc 0 -1px inset;
 }
 
-/* line 100, ../sass/style.sass */
+/* line 128, ../sass/style.sass */
 #textfield {
   width: 830px;
   height: 640px;
   padding: 0;
-  color: #a7a7a7;
-  background-color: #fdf6e5;
+  color: #4d4d4c;
+  background-color: #e6eaef;
   overflow: scroll;
   text-shadow: 0 0 0;
 }
 
-/* line 109, ../sass/style.sass */
+/* line 137, ../sass/style.sass */
 #scroller {
   white-space: nowrap;
 }
 
-/* line 112, ../sass/style.sass */
+/* line 140, ../sass/style.sass */
 #statusbar {
   height: 21px;
   display: block;
@@ -183,7 +195,7 @@ ol.copy > li:before {
   *zoom: 1;
 }
 
-/* line 121, ../sass/style.sass */
+/* line 149, ../sass/style.sass */
 #copyleft {
   width: 16px;
   height: 16px;
@@ -196,175 +208,139 @@ ol.copy > li:before {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 128, ../sass/style.sass */
+/* line 156, ../sass/style.sass */
 #copyleft::after {
   content: "\2699";
 }
 
 /* Syntax highlighting */
-/* line 133, ../sass/style.sass */
-.haml, .link {
-  color: #cd264c;
+/* line 161, ../sass/style.sass */
+.haml, .link, .class {
+  color: #c82829;
 }
 
-/* line 136, ../sass/style.sass */
-.coffee {
-  width: 1070px;
-}
-/* line 139, ../sass/style.sass */
-.coffee .string:before {
-  content: "\0000a0 \0000a0";
-}
-/* line 142, ../sass/style.sass */
-.coffee .string .string:before {
-  content: "";
-}
-
-/* line 145, ../sass/style.sass */
-.html {
-  width: 840px;
-}
-
-/* line 148, ../sass/style.sass */
-.ruby {
-  width: 850px;
-}
-
-/* line 151, ../sass/style.sass */
-.copy {
-  background: #191919;
-  width: 830px;
-  height: 540px;
-}
-/* line 155, ../sass/style.sass */
-.copy li {
-  color: #c3d1cf;
-}
-/* line 157, ../sass/style.sass */
-.copy .highlighted {
-  background: #202122;
-}
-/* line 159, ../sass/style.sass */
-.copy a {
-  color: #7f7c33;
-  text-decoration: none;
-}
-/* line 162, ../sass/style.sass */
-.copy a:active, .copy a:hover {
-  color: #b2af66;
+/* line 164, ../sass/style.sass */
+.parameters, .interpol, .date, .value {
+  color: #f5871f;
 }
 
 /* line 167, ../sass/style.sass */
-.indent:before {
-  content: "\0000a0 \0000a0";
+.property {
+  color: #eab700;
 }
 
 /* line 170, ../sass/style.sass */
-.class {
-  color: #cd264c;
+.reference, .function, .method {
+  color: #4271ae;
 }
-/* line 172, ../sass/style.sass */
-.class:after {
-  content: " {";
-  color: #4d4d4d;
+
+/* line 173, ../sass/style.sass */
+.string, .headline {
+  color: #718c00;
 }
 
 /* line 176, ../sass/style.sass */
-.property {
-  color: #ca9d36;
-}
-/* line 178, ../sass/style.sass */
-.property:before {
-  content: "\0000a0 \0000a0";
-}
-/* line 180, ../sass/style.sass */
-.property:after {
-  content: ":";
-  color: #4d4d4d;
+.integer, .define {
+  color: #3e999f;
 }
 
-/* line 184, ../sass/style.sass */
-.value {
-  color: #f6853c;
-}
-/* line 186, ../sass/style.sass */
-.value:after {
-  content: ",";
-  color: #4d4d4d;
+/* line 179, ../sass/style.sass */
+.rocket, .block {
+  color: #8959a8;
 }
 
-/* line 190, ../sass/style.sass */
-.reference {
-  color: #4173a9;
-}
-
-/* line 194, ../sass/style.sass */
-.value:before, .reference:before {
-  content: "\0000a0 \0000a0 \0000a0 \0000a0";
-}
-
-/* line 197, ../sass/style.sass */
-.string {
-  color: #708b2c;
-}
-
-/* line 200, ../sass/style.sass */
-.integer {
-  color: #89beac;
-}
-
-/* line 204, ../sass/style.sass */
-.empty:after {
-  content: "";
-}
-
-/* line 208, ../sass/style.sass */
-.end:after {
-  content: ";";
-  color: #4d4d4d;
-}
-
-/* line 212, ../sass/style.sass */
-.function {
-  color: #4173b1;
-}
-
-/* line 215, ../sass/style.sass */
-.define {
-  color: #55a1a5;
-}
-
-/* line 218, ../sass/style.sass */
-.parameters, .interpol, .date {
-  color: #f6853c;
-}
-
-/* line 221, ../sass/style.sass */
-.rocket {
-  color: #8a5ba2;
-}
-
-/* line 224, ../sass/style.sass */
+/* line 182, ../sass/style.sass */
 .comment {
   color: #8e908c;
 }
 
-/* line 227, ../sass/style.sass */
-.block {
-  color: #8a5ba2;
+/* line 185, ../sass/style.sass */
+.highlighted {
+  background: #d6d6d6;
 }
 
-/* line 230, ../sass/style.sass */
-.method {
-  color: #4173a9;
+/* line 188, ../sass/style.sass */
+.coffee {
+  width: 1070px;
+}
+/* line 191, ../sass/style.sass */
+.coffee .string:before {
+  content: "\0000a0 \0000a0";
+}
+/* line 194, ../sass/style.sass */
+.coffee .string .string:before {
+  content: "";
+}
+
+/* line 197, ../sass/style.sass */
+.html {
+  width: 840px;
+}
+
+/* line 200, ../sass/style.sass */
+.ruby {
+  width: 850px;
+}
+
+/* line 203, ../sass/style.sass */
+.copy {
+  background: #1d1f21;
+  width: 830px;
+  height: 540px;
+}
+/* line 207, ../sass/style.sass */
+.copy li {
+  color: #c5c8c6;
+}
+/* line 209, ../sass/style.sass */
+.copy .highlighted {
+  background: #373b41;
+}
+/* line 211, ../sass/style.sass */
+.copy a {
+  color: #828a35;
+  text-decoration: none;
+}
+/* line 214, ../sass/style.sass */
+.copy a:active, .copy a:hover {
+  color: #b5bd68;
+}
+
+/* line 219, ../sass/style.sass */
+.indent:before {
+  content: "\0000a0 \0000a0";
+}
+
+/* line 223, ../sass/style.sass */
+.class:after {
+  content: " {";
+}
+
+/* line 227, ../sass/style.sass */
+.property:before {
+  content: "\0000a0 \0000a0";
+}
+/* line 229, ../sass/style.sass */
+.property:after {
+  content: ":";
 }
 
 /* line 233, ../sass/style.sass */
-.headline {
-  color: #7d954e;
+.value:after {
+  content: ",";
 }
 
-/* line 236, ../sass/style.sass */
-.highlighted {
-  background: #eee8d7;
+/* line 237, ../sass/style.sass */
+.value:before, .reference:before {
+  content: "\0000a0 \0000a0 \0000a0 \0000a0";
+}
+
+/* line 241, ../sass/style.sass */
+.empty:after {
+  content: "";
+}
+
+/* line 245, ../sass/style.sass */
+.end:after {
+  content: ";";
 }

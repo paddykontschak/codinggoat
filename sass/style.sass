@@ -4,6 +4,26 @@
 
 @import "compass"
 
+// Light
+$background: #e6eaef
+$current_line: #efefef
+$selection: #d6d6d6
+$foreground: #4d4d4c
+$comment: #8e908c
+$red: #c82829
+$orange: #f5871f
+$yellow: #eab700
+$green: #718c00
+$aqua: #3e999f
+$blue: #4271ae
+$purple: #8959a8
+
+// Dark
+$dbackground: #1d1f21
+$dselection: #373b41
+$dforeground: #c5c8c6
+$dgreen: #b5bd68
+
 html
   height: 100%
   margin: 0
@@ -54,6 +74,8 @@ ol
       text-align: right
       border-right: 1px dotted #e4e4e4
       float: left
+    &:after
+      color: $foreground
   &:first-child
     counter-reset: customlistcounter
   &.copy
@@ -86,10 +108,16 @@ ol
 #tree
   width: 120px
   height: 620px
-  padding: 10px 0
+  padding: 2px 0
   color: #455563
-  background-color: #e6eaef
+  background-color: $background
   +box-shadow(#bdbdbd -1px 0 inset)
+
+.nav
+  color: #707e8b
+  font-weight: bold
+  text-transform: uppercase
+  padding: 2px 12px 2px 11px
 
 .current_page
   color: #f3ffff
@@ -101,8 +129,8 @@ ol
   width: 830px
   height: 640px
   padding: 0
-  color: #a7a7a7
-  background-color: #fdf6e5
+  color: $foreground
+  background-color: $background
   overflow: scroll
   +text-shadow(0 0 0)
 
@@ -130,8 +158,32 @@ ol
 
 /* Syntax highlighting */
 
-.haml, .link
-  color: #cd264c
+.haml, .link, .class
+  color: $red
+
+.parameters, .interpol, .date, .value
+  color: $orange
+
+.property
+  color: $yellow
+
+.reference, .function, .method
+  color: $blue
+
+.string, .headline
+  color: $green
+
+.integer, .define
+  color: $aqua
+
+.rocket, .block
+  color: $purple
+
+.comment
+  color: $comment
+
+.highlighted
+  background: $selection
 
 .coffee
   width: 1070px
@@ -149,56 +201,41 @@ ol
   width: 850px
 
 .copy
-  background: #191919
+  background: $dbackground
   width: 830px
   height: 540px
   li
-    color: #c3d1cf
+    color: $dforeground
   .highlighted
-    background: #202122
+    background: $dselection
   a
-    color: #b2af66 - #333333
+    color: $dgreen - #333333
     text-decoration: none
     &:active,
     &:hover
-      color: #b2af66
+      color: $dgreen
 
 .indent
   &:before
     content: "\0000a0 \0000a0"
 
 .class
-  color: #cd264c
   &:after
     content: " {"
-    color: #4d4d4d
 
 .property
-  color: #ca9d36
   &:before
     content: "\0000a0 \0000a0"
   &:after
     content: ":"
-    color: #4d4d4d
 
 .value
-  color: #f6853c
   &:after
     content: ","
-    color: #4d4d4d
-
-.reference
-  color: #4173a9
 
 .value, .reference
   &:before
     content: "\0000a0 \0000a0 \0000a0 \0000a0"
-
-.string
-  color: #708b2c
-
-.integer
-  color: #89beac
 
 .empty
   &:after
@@ -207,31 +244,3 @@ ol
 .end
   &:after
     content: ";"
-    color: #4d4d4d
-
-.function
-  color: #4173b1
-
-.define
-  color: #55a1a5
-
-.parameters, .interpol, .date
-  color: #f6853c
-
-.rocket
-  color: #8a5ba2
-
-.comment
-  color: #8e908c
-
-.block
-  color: #8a5ba2
-
-.method
-  color: #4173a9
-
-.headline
-  color: #7d954e
-
-.highlighted
-  background: #eee8d7
