@@ -256,7 +256,7 @@ ol.copy > li:before {
 
 /* line 185, ../sass/style.sass */
 .highlighted {
-  background: #d6d6d6;
+  background: #efefef;
 }
 
 /* line 188, ../sass/style.sass */
@@ -294,7 +294,7 @@ ol.copy > li:before {
 }
 /* line 209, ../sass/style.sass */
 .copy .highlighted {
-  background: #373b41;
+  background: #393939;
 }
 /* line 211, ../sass/style.sass */
 .copy a {
