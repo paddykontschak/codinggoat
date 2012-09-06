@@ -1,33 +1,246 @@
 /**
  * Hi, this website was created by Patrick Kontschak.
- *
- * Thanks goes to:
- * Twitter Bootstrap: http://twitter.github.com/bootstrap/
- * Bootstrap for Sass: https://github.com/thomas-mcdonald/bootstrap-sass/
- * Prism.js: http://prismjs.com/
- *
  */
-@import "bootstrap/variables"
-@import "bootstrap/mixins"
-@import "bootstrap/code"
-@import "bootstrap/type"
-@import "bootstrap/reset"
-@import "bootstrap/scaffolding"
-@import "bootstrap/grid"
-@import "bootstrap/utilities"
+
+@import "compass"
+
+// Light
+$background: #fdf6e3
+$current_line: #eee8d5
+$selection: #d6d6d6
+$foreground: #4d4d4c
+$comment: #8e908c
+$red: #c82829
+$orange: #f5871f
+$yellow: #eab700
+$green: #718c00
+$aqua: #3e999f
+$blue: #4271ae
+$purple: #8959a8
+
+// Dark
+$dbackground: #1d1f21
+$dcurrent_line: #393939
+$dforeground: #c5c8c6
+$dgreen: #b5bd68
 
 html
-  display: table
-  width: 100%
   height: 100%
+  margin: 0
+  background: url("../images/bg.jpg") no-repeat
+  background-size: cover
 
 body
-  margin: 0px
-  display: table-cell
-  vertical-align: middle
+  width: 950px + 200px + 60px
+  margin: 0 auto
+  padding: 40px
+  font-family: "Lucida Grande"
+  font-size: 12px
 
-pre[class*="language-"]
+a
+  text-decoration: none
+
+ul
   margin: 0
+  padding: 0
+  list-style-type: none
+  li
+    margin-right: 1px
+    a
+      display: block
+      padding: 2px 12px 2px 11px 
 
-.line-highlight::before, .line-highlight[data-end]::after
-  padding: 0 .7em
+ol
+  margin: 0
+  padding: 0 0 100px
+  list-style-type: none
+  font-size: 14px
+  font-family: 'Inconsolata', monospace
+  & > li
+    display: block
+    width: 100%
+    color: #4d4d4d
+    counter-increment: customlistcounter
+    a
+      color: #708b2c - #333333
+      &:active,
+      &:hover
+        color: #708b2c
+    &:before
+      content: counter(customlistcounter) " "
+      width: 19px
+      padding: 0 20px 0 0
+      color: #a6a6a5
+      text-align: right
+      border-right: 1px dotted #e4e4e4
+      float: left
+    &:after
+      color: $foreground
+  &:first-child
+    counter-reset: customlistcounter
+  &.copy
+    & > li
+      &:before
+        color: #6f706f
+        border-right: 1px dotted #323332
+
+#editor
+  float: left
+  &.NSWindow
+    width: 950px
+    height: 684px
+    .NSView
+      padding: 0
+      height: 640px
+      & > div
+        float: left
+
+#info
+  float: right
+  &.NSWindow
+    width: 200px
+    height: 245px
+    .NSView
+      padding-top: 5px
+      p:first-child
+        font-weight: bold
+
+#tree
+  width: 120px
+  height: 636px
+  padding: 2px 0
+  color: #455563
+  background-color: #e6eaef
+  +box-shadow(#bdbdbd -1px 0 inset)
+
+.nav
+  color: #707e8b
+  font-weight: bold
+  text-transform: uppercase
+  padding: 2px 12px 2px 11px
+
+.current_page
+  color: #f3ffff
+  +text-shadow(0px 1px 1px rgba(#000, .5))
+  +background(linear-gradient(#67b1df, #3489cc))
+  +box-shadow(#5aa5da 0 1px inset, #6fbae5 0 2px inset, #307cbc 0 -1px inset)
+
+#textfield
+  width: 830px
+  height: 640px
+  padding: 0
+  color: $foreground
+  background-color: $background
+  overflow: scroll
+  +text-shadow(0 0 0)
+
+#scroller
+  white-space: nowrap
+
+#statusbar
+  height: 21px
+  display: block
+  border-top: solid 1px #686868
+  +background(linear-gradient(#e4e4e4, #b8b7b8))
+  +box-shadow(#f1f1f1 0 1px inset)
+  +border-radius(0 0 4px 4px)
+  +clearfix
+
+#copyleft
+  width: 16px
+  height: 16px
+  display: block
+  margin: 9px 4px 0
+  font-size: 22px
+  +rotate(180deg)
+  &::after
+    content: "\2699"
+
+/* Syntax highlighting */
+
+.haml, .link, .class
+  color: $red
+
+.parameters, .interpol, .date, .value
+  color: $orange
+
+.property
+  color: $yellow
+
+.reference, .function, .method
+  color: $blue
+
+.string, .headline
+  color: $green
+
+.integer, .define
+  color: $aqua
+
+.rocket, .block
+  color: $purple
+
+.comment
+  color: $comment
+
+.highlighted
+  background: $current_line
+
+.coffee
+  width: 1070px
+  .string
+    &:before
+      content: "\0000a0 \0000a0"
+    .string
+      &:before
+        content: ""
+
+.html
+  width: 840px
+
+.ruby
+  width: 850px
+
+.copy
+  background: $dbackground
+  width: 830px
+  height: 540px
+  li
+    color: $dforeground
+  .highlighted
+    background: $dcurrent_line
+  a
+    color: $dgreen - #333333
+    text-decoration: none
+    &:active,
+    &:hover
+      color: $dgreen
+
+.indent
+  &:before
+    content: "\0000a0 \0000a0"
+
+.class
+  &:after
+    content: " {"
+
+.property
+  &:before
+    content: "\0000a0 \0000a0"
+  &:after
+    content: ":"
+
+.value
+  &:after
+    content: ","
+
+.value, .reference
+  &:before
+    content: "\0000a0 \0000a0 \0000a0 \0000a0"
+
+.empty
+  &:after
+    content: ""
+
+.end
+  &:after
+    content: ";"
