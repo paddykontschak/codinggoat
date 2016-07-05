@@ -39,7 +39,7 @@ ol {
   ol > li {
     display: block;
     width: 100%;
-    color: #4d4d4d;
+    color: #a6a6a5;
     counter-increment: customlistcounter; }
     ol > li a {
       color: #3d5800; }
@@ -171,7 +171,7 @@ ol {
 
 /* Syntax highlighting */
 .haml, .link, .class {
-  color: #c82829; }
+  color: #991e1e; }
 
 .parameters, .interpol, .date, .value {
   color: #f5871f; }
