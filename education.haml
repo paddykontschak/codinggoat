@@ -1,6 +1,6 @@
 %ol.coffee
   %li
-    %span.function education
+    %span.function school
     %span.define =
     %span.parameters (location = "Bremen, Germany", year_start = "2006", year_end = "2009", degree = "Abitur")
     %span.rocket ->
@@ -34,6 +34,33 @@
     %span.string
       %a{:href => "http://www.wilhelm-wagenfeld-schule.de/", :target => "_blank"} "http://www.wilhelm-wagenfeld-schule.de/"
   %li
+    %span.function apprenticeship
+    %span.define =
+    %span.parameters (location = "Stuttgart, Germany", start = "September 2015", end = "August 2017", degree = "Fachinformatiker Richtung Anwendungsentwicklung")
+    %span.rocket ->
+  %li
+    %span.string
+      "I'm currently doing an apprenticeship at the 'IT.Schule Stuttgart' in
+      %span.interpol< \#{
+      %span.string>< location
+      %span.interpol }.
+      %span.string The apprenticeship started in
+      %span.interpol< \#{
+      %span.string>< start
+      %span.interpol }
+      %span.string and will be finished by
+      %span.interpol< \#{
+      %span.string>< end
+      %span.interpol } 
+      %span.string after which I'll have a degree as
+      %span.interpol< \#{
+      %span.string>< degree
+      %span.interpol }
+      %span.string> ."
+  %li
+    %span.string
+      %a{:href => "https://www.its-stuttgart.de/", :target => "_blank"} "https://www.its-stuttgart.de/"
+  %li
     &nbsp;
   %li
     %span.function skills_aquisition
@@ -43,8 +70,10 @@
   %li.highlighted
     %span.string "I'm passionate about learning new things. I've been teaching myself the ins and outs of almost all the languages that I know."
   %li
-    %span.string "I started learning HTML in 2002, CSS in 2005 and preprocessors, like LESS and Sass, in 2010."
+    %span.string "I started learning HTML in 2002, CSS in 2005 and preprocessors, like LESS, Sass, Haml, Coffeescript, in 2010."
   %li
     %span.string "I have basic experience in Ruby, Python, C and Objective-C."
   %li
     %span.string "My previous jobs introduced me to version control and gave me experience how to work with a team of developers."
+  %li
+    %span.string "In recent years I've been working in big corporations as well as small agencies."
