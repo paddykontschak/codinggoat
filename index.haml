@@ -4,7 +4,6 @@
     %title The Coding Goat
     %meta{:author => "Patrick Kontschak"}
     %style{:type => "text/css", :media => "all"} @import "http://fonts.googleapis.com/css?family=Inconsolata";
-    %style{:type => "text/css", :media => "all"} @import "css/cocoss.css";
     %style{:type => "text/css", :media => "all"} @import "css/style.css";
     /[if lt IE 9]
       %script{:src => "http://html5shim.googlecode.com/svn/trunk/html5.js"}
@@ -54,18 +53,19 @@
           Info
         .NSToolbar
       .NSView
-        %p Don't like code?
-        %p If you want to see a less geeky resume you can try any of these websites:
-        %ul
-          %li
-            %a{:href => "http://zerp.ly/paddykontschak", :target => "_blank"} Zerply
-          %li
-            %a{:href => "http://beknown.com/patrick-kontschak", :target => "_blank"} Monster
-          %li
-            %a{:href => "https://www.linkedin.com/in/paddykontschak", :target => "_blank"} LinkedIn
-          %li
-            %a{:href => "http://www.xing.com/profile/Patrick_Kontschak", :target => "_blank"} Xing
-          %li
-            %a{:href => "http://careers.stackoverflow.com/paddykontschak", :target => "_blank"} StackOverflow
-          %li
-            %a{:href => "http://resume.github.com/?paddykontschak", :target => "_blank"} Resume.Github.com
+        #info-content
+          %p Don't like code?
+          %p If you want to see a less geeky resume you can try any of these websites:
+          %ul
+            %li
+              %a{:href => "http://zerp.ly/paddykontschak", :target => "_blank"} Zerply
+            -# %li
+            -#   %a{:href => "http://beknown.com/patrick-kontschak", :target => "_blank"} Monster
+            %li
+              %a{:href => "https://www.linkedin.com/in/paddykontschak", :target => "_blank"} LinkedIn
+            %li
+              %a{:href => "http://www.xing.com/profile/Patrick_Kontschak", :target => "_blank"} Xing
+            %li
+              %a{:href => "http://careers.stackoverflow.com/paddykontschak", :target => "_blank"} StackOverflow
+            %li
+              %a{:href => "http://resume.github.com/?paddykontschak", :target => "_blank"} Resume.Github.com

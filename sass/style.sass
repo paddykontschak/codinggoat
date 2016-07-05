@@ -19,7 +19,7 @@ $blue: #4271ae
 $purple: #8959a8
 
 // Dark
-$dbackground: #1d1f21
+$dbackground: #272822
 $dcurrent_line: #393939
 $dforeground: #c5c8c6
 $dgreen: #b5bd68
@@ -27,8 +27,6 @@ $dgreen: #b5bd68
 html
   height: 100%
   margin: 0
-  background: url("../images/bg.jpg") no-repeat
-  background-size: cover
 
 body
   width: 950px + 200px + 60px
@@ -36,6 +34,10 @@ body
   padding: 40px
   font-family: "Lucida Grande"
   font-size: 12px
+  background-color: #269
+  background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px)
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px
 
 a
   text-decoration: none
@@ -99,19 +101,30 @@ ol
   float: right
   &.NSWindow
     width: 200px
-    height: 245px
     .NSView
-      padding-top: 5px
       p:first-child
         font-weight: bold
+
+#info-content
+  padding: 20px
+  padding-top: 5px
+  color: $dforeground
+  background-color: $dbackground
+  +border-radius(0 0 4px 4px)
+  a
+    color: #455563
+    &:hover,
+    &:active
+      color: #455563 + #232323
 
 #tree
   width: 120px
   height: 636px
   padding: 2px 0
   color: #455563
-  background-color: #e6eaef
-  +box-shadow(#bdbdbd -1px 0 inset)
+  background-color: #232323
+  +box-shadow(#000 -1px 0 inset)
+  +border-radius(0 0 0 4px)
 
 .nav
   color: #707e8b
@@ -121,28 +134,30 @@ ol
 
 .current_page
   color: #f3ffff
-  +text-shadow(0px 1px 1px rgba(#000, .5))
-  +background(linear-gradient(#67b1df, #3489cc))
-  +box-shadow(#5aa5da 0 1px inset, #6fbae5 0 2px inset, #307cbc 0 -1px inset)
+  // +text-shadow(0px 1px 1px rgba(#000, .5))
+  +background(linear-gradient(#272727, #393939))
+  +box-shadow(#000 0 1px inset, #000 0 -1px inset)
 
 #textfield
   width: 830px
   height: 640px
   padding: 0
-  color: $foreground
-  background-color: $background
+  color: $dforeground
+  background-color: $dbackground
   overflow: scroll
   +text-shadow(0 0 0)
+  +border-radius(0 0 4px 0)
 
 #scroller
   white-space: nowrap
 
 #statusbar
-  height: 21px
-  display: block
-  border-top: solid 1px #686868
-  +background(linear-gradient(#e4e4e4, #b8b7b8))
-  +box-shadow(#f1f1f1 0 1px inset)
+  height: 30px
+  display: none
+  border-top: solid 1px #444
+  border-bottom: solid 1px #111
+  +background(linear-gradient(#393939, #272727))
+  +box-shadow(#000 0 1px inset)
   +border-radius(0 0 4px 4px)
   +clearfix
 
@@ -150,8 +165,8 @@ ol
   width: 16px
   height: 16px
   display: block
-  margin: 9px 4px 0
-  font-size: 22px
+  margin: 12px 10px
+  font-size: 16px
   +rotate(180deg)
   &::after
     content: "\2699"
@@ -244,3 +259,15 @@ ol
 .end
   &:after
     content: ";"
+
+.NSWindow
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px, rgba(0, 0, 0, 0.1) -1px -1px, rgba(0, 0, 0, 0.1) 1px -1px, rgba(0, 0, 0, 0.1) -1px 1px, rgba(0, 0, 0, 0.8) 0 0 70px
+  +border-radius(4px)
+
+.INTitlebarView
+  padding: 15px 10px
+  color: #fff
+  +background(linear-gradient(#393939, #272727))
+  +border-radius(4px 4px 0 0)
+  border-top: solid 1px #686868
+  border-bottom: solid 1px #000
